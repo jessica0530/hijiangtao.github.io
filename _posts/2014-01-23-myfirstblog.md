@@ -1,5 +1,4 @@
 ---
-date: 2014-01-23 02:00:00
 layout: post
 title: 我的第一篇博客
 thread: 2
