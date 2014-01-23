@@ -7,6 +7,10 @@ categories: 文档
 tags: linux github
 ---
 
+```
+ssh-keygen -t rsa -C "email@email.con"
+```
+
 好吧，刚写完第一篇博客想用LINUX的终端把文章传上github时出了好多小插曲，由于不太理解github在终端上的一些用法，于是睡觉的时刻又狠狠的往后拖了半个小时，虽然最终把今天一天的修改过的版本都莫名的删除光了，但还好本地有备份，再加上鼓捣出来了维护的正确方法，下面就记录一下自己是如何操作来如何维护一个已有的Repository。
 
 以我的个人博客[hijiangtao.github.io](https://github.com/hijiangtao/hijiangtao.github.io)为例，我现在写了一篇文章要更新到github自己的仓库里，那么我该完成的有以下几步：
