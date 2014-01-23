@@ -9,10 +9,16 @@
 @import url(http://fonts.googleapis.com/css?family=Galdeano);
 @import url(http://fonts.googleapis.com/css?family=Electrolize);
 @import url(http://fonts.googleapis.com/css?family=Cuprum);
-body{font-size:14px;word-spacing:1px;
-        margin-left:auto;
-margin-right:auto;
-        font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;color:#000000;background-color:#ffffff;}
+
+body {
+	font-size:14px;
+	word-spacing:1px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+	color:#000000;
+	background-color:#F7F7F7;}
+
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color:#dd0000;text-decoration:none;}
 a:hover{color:#333333;text-decoration:underline;}
@@ -23,7 +29,7 @@ ol,ul{list-style-position:inside;}
 ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 
 pre code {
-  background-color: #f8f8f8;
+  background-color: #BBBBBB;
   padding: 0 1em;
   border: 1px dashed #eee !important;
   border-color: #e0e0e0 !important;
@@ -34,7 +40,7 @@ pre code {
   overflow: auto; }
 
 code {
-  background-color: #D0D0D0;
+  background-color: #BBBBBB;
   padding: 2px 5px;
   border: 1px dashed #e0e0e0; }
 
@@ -48,8 +54,7 @@ blockquote p{margin:0;padding:.5em 0;}
 #tag_cloud a:hover{color:#333333 !important;text-decoration:none;}
 .listing-item,.listing-seperator{list-style-type:none;}
 .listing-item a{
-        padding:.2em 1em;
-
+	padding:.2em 1em;
 }
 
 .listing-item time{color:#999999;}
@@ -58,9 +63,11 @@ blockquote p{margin:0;padding:.5em 0;}
 .pageNav{font-weight:bold;font-size:17px;}
 .pageNavInvalid{font-weight:bold;font-size:17px;color:#D0D0D0;}
 header{padding:.5em 0;border-bottom: 1px solid #cccccc;}
+
 nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-12em;width:9em;text-align:right;}
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
+
 .post{padding:.5em 0em;}
 h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.6em;color:#000;}
 h2{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;}
