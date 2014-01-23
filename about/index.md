@@ -12,6 +12,8 @@ I'm now having a researching project with Professor Tang in Data Mining and Proc
 
 {{ site.about }}
 
+![hijiangtao](/album/me.jpg)
+
 ----
 
 ###Contact / 联系方式：
