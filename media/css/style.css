@@ -40,8 +40,9 @@ blockquote, pre code {
   overflow: auto; }
 
 code {
+	font-size: 12px;
   background-color: #BBBBBB;
-  padding: 2px 5px;
+  padding: 1px 2px;
   border: 1px dashed #e0e0e0; }
 
 #container{width:600px;margin:2em auto;display:block;padding:0 2em;}
