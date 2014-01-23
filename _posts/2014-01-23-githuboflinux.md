@@ -16,26 +16,31 @@ ssh-keygen -t rsa -C "email@email.con"
 以我的个人博客[hijiangtao.github.io](https://github.com/hijiangtao/hijiangtao.github.io)为例，我现在写了一篇文章要更新到github自己的仓库里，那么我该完成的有以下几步：
 
 1. 打开终端，并进入你将要上传的代码文件夹位置（以下为我要进入的DataBlog）。
+
 {% highlight javascript linenos %}
     cd '/home/data/文档/resolutions/DataBlog' 
 {% endhighlight %}
 
 2. 在当前目录下创建一个.git文件夹。
+
 {% highlight javascript linenos %}
     git init
 {% endhighlight %}
 
 3. 把当前路径下的所有文件，添加到待上传的文件列表中(我本来只需要更新一个文件，但如果只选中待更新文件而不是全部的话，执行之后的指令得到的结果就是代码仓库里只有这一个文件，而且版本历史也被全部清空了，暂时还不知道为什么)。
+
 {% highlight javascript linenos %}
     git add .
 {% endhighlight %}
 
 4. 给即将上传的文件统一添加Commit summary.
+
 {% highlight javascript linenos %}
     git commit -m "xxxxx" 
 {% endhighlight %}
 
 5. 通过push修改到origin中，更新代码。
+
 {% highlight javascript linenos %}
     git push -u origin master
 {% endhighlight %}
