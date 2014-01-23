@@ -11,6 +11,13 @@ tags: linux github
 
 以我的个人博客[hijiangtao.github.io](https://github.com/hijiangtao/hijiangtao.github.io)为例，我现在写了一篇文章要更新到github自己的仓库里，那么我该完成的有以下几步：
 
+```python
+class SomeClass:
+    pass
+if __name__ == '__main__':
+    print 'hello world'
+```
+
 1. 打开终端，并进入你将要上传的代码文件夹位置（以下为我要进入的DataBlog）。
 {% highlight javascript linenos %}
     cd '/home/data/文档/resolutions/DataBlog' 
