@@ -1,5 +1,5 @@
 ---
-date: 2014-01-23
+date: 2014-01-24
 layout: post
 title: Linux命令使用小结
 thread: 5
