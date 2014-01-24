@@ -33,7 +33,7 @@ WordPress中文官方站点告诉我们：WordPress是一个注重美学、易�
 
 ![](/assets/2013-11-18-wordpress-4.jpg)
 
-数据库创建成功之后当然是要准备我们的最后一步，就是下载wordpress程序包，下载地址为： http://cn.wordpress.org/
+数据库创建成功之后当然是要准备我们的最后一步，就是下载wordpress程序包，下载地址为： <http://cn.wordpress.org/>
 
 **第二步**：导入wordpress程序把下载下来的wordpress程序包解压，然后点击xampp界面上面的Explore按钮，如图：
 
@@ -57,4 +57,4 @@ WordPress中文官方站点告诉我们：WordPress是一个注重美学、易�
 
 **Ghost is a platform dedicated to one thing: Publishing.** It's beautifully designed, completely customisable and completely Open Source. Ghost allows you to write and publish your own blog, giving you the tools to make it easy and even fun to do. It's simple, elegant, and designed so that you can spend less time messing with making your blog work - and more time blogging. 
 
-The site: https://ghost.org/
+The site: <https://ghost.org/>
