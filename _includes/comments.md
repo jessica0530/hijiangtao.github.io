@@ -16,3 +16,18 @@ var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
 	})();
 	</script>
 {% endif %}
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	ralateuid:{
+		"tsina":"hijiangtao"
+	},
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
