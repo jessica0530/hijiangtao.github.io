@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hijiangtao" />
+    <title>在linux上使用github维护个人站点小结</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/feed/" rel="alternate" title="hijiangtao" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css" />
+    <link rel="stylesheet" href="/media/css/highlight.css" />
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <!--a script to set the timer-->
+  <script type="text/javascript">
+    function setTimeSpan(){
+            var date = new Date();
+            timeSpan.innerText=date.format('yyyy-MM-dd hh:mm:ss');
+    }
+    
+    Date.prototype.format = function(format)
+                {
+    var o =
+            {
+                "M+" : this.getMonth()+1, //month
+                "d+" : this.getDate(),    //day
+                "h+" : this.getHours(),   //hour
+                "m+" : this.getMinutes(), //minute
+                "s+" : this.getSeconds(), //second
+                "q+" : Math.floor((this.getMonth()+3)/3),  //quarter
+                "S" : this.getMilliseconds() //millisecond
+            }
+            if(/(y+)/.test(format))
+            format=format.replace(RegExp.$1,(this.getFullYear()+"").substr(4 - RegExp.$1.length));
+            for(var k in o)
+            if(new RegExp("("+ k +")").test(format))
+            format = format.replace(RegExp.$1,RegExp.$1.length==1 ? o[k] : ("00"+ o[k]).substr((""+ o[k]).length));
+            return format;
+                }
+  </script>
+  <body onLoad="setInterval(setTimeSpan,1000);">
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>在linux上使用github维护个人站点小结</h1>
+        </header>
+        <nav><!--Define the Navigation links-->
+        <span><a title="网站首页" class="" href="/">HOME</a></span>
+        <span><a title="文章分类" class="" href="/categories/">CATEGORIES</a></span>
+        <span><a title="标签索引" class="" href="/tags/">TAGS</a></span>
+        <span><a title="友情链接" class="" href="/links/">LINKS</a></span>
+        <span><a title="留言版" class="" href="/guestbook/">GUESTBOOK</a></span>
+        <span><a title="关于作者" class="" href="/about/">ABOUT</a></span>
+        <span><a title="RSS订阅" class="" href="/feed/" target="_blank">SUBSCRIBE</a></span>
+        </nav>
+        <article class="content">
+        <section class="post">
+<p>好吧，刚写完第一篇博客想用LINUX的终端把文章传上github时出了好多小插曲，由于不太理解github在终端上的一些用法，于是睡觉的时刻又狠狠的往后拖了半个小时，虽然最终把今天一天的修改过的版本都莫名的删除光了，但还好本地有备份，再加上鼓捣出来了维护的正确方法，下面就记录一下自己是如何操作来如何维护一个已有的Repository。</p>
+
+<p>以我的个人博客<a href="https://github.com/hijiangtao/hijiangtao.github.io">hijiangtao.github.io</a>为例，我现在写了一篇文章要更新到github自己的仓库里，那么我该完成的有以下几步：</p>
+
+<ul>
+<li>打开终端，并进入你将要上传的代码文件夹位置（以下为我要进入的DataBlog）。</li>
+</ul>
+
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span>     <span class="nx">cd</span> <span class="s1">&#39;/home/data/文档/resolutions/DataBlog&#39;</span> 
+</code></pre>
+</div>
+
+
+<ul>
+<li>在当前目录下创建一个.git文件夹。</li>
+</ul>
+
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span>     <span class="nx">git</span> <span class="nx">init</span>
+</code></pre>
+</div>
+
+
+<ul>
+<li>把当前路径下的所有文件，添加到待上传的文件列表中(我本来只需要更新一个文件，但如果只选中待更新文件而不是全部的话，执行之后的指令得到的结果就是代码仓库里只有这一个文件，而且版本历史也被全部清空了，暂时还不知道为什么)。</li>
+</ul>
+
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span>     <span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+</code></pre>
+</div>
+
+
+<ul>
+<li>给即将上传的文件统一添加Commit summary.</li>
+</ul>
+
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span>     <span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">&quot;xxxxx&quot;</span> 
+</code></pre>
+</div>
+
+
+<ul>
+<li>通过push修改到origin中，更新代码。</li>
+</ul>
+
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span>     <span class="nx">git</span> <span class="nx">push</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">origin</span> <span class="nx">master</span>
+</code></pre>
+</div>
+
+
+<p>至此，已经将本地的更新代码上传到GitHub服务器了。但其中有几点关键还是不太明白，明天再看看争取弄清楚，比如不同分支在代码仓库中所起到的作用。</p>
+
+<p>而有关在linux下如何使用GitHub我也在网上搜索到一篇较为详细的教程，以供参考。</p>
+
+<ul>
+<li><a href="http://blog.csdn.net/lishuo_os_ds/article/details/8078475#sec-1.4.2">Github详细教程</a></li>
+</ul>
+
+
+</section>
+<section class="meta">
+
+<br/>
+<br/>
+<span>
+	<a  href="http://hijiangtao.github.io/2014/01/20/bigdatabook/" class="pageNav"  >Previous(前一篇)</a>
+        &nbsp;&nbsp;&nbsp;
+        <a  href="http://hijiangtao.github.io/2014/01/23/myfirstblog/" class="pageNav"  >Next(后一篇)</a>
+</span>
+<hr>
+<span class="author">
+  <a href="http://hijiangtao.github.com">hijiangtao</a>
+</span>
+<span class="time">
+  /
+  <time datetime="2014-01-23">2014-01-23</time>
+</span>
+<br />
+<span class="publish_pretext">
+  Published in
+</span>
+
+<span class="categories">
+  categories
+  
+  <a href="/categories/#文档" title="文档">文档</a>&nbsp;
+  
+</span>
+
+
+<span class="tags">
+  tagged with 
+  
+  <a href="/tags/#linux" title="linux">linux</a>&nbsp;
+  
+  <a href="/tags/#github" title="github">github</a>&nbsp;
+  
+</span>
+
+</section>
+
+	<!--define the duoshuo plugin-->
+	<div class="ds-thread" data-thread-key="3" data-url="http://hijiangtao.github.io/2014/01/23/githuboflinux/" data-title="在linux上使用github维护个人站点小结" />
+	
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"datablog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+
+
+        </article>
+      </div>
+
+    <footer><!--footer settings-->
+        <p><small>
+            Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&<a href="http://github.com/hijiangtao/hijiangtao.github.io" target="_blank" title="项目主页">GitHub</a>
+             | Copyright©2014 <a href="http://hijiangtao.github.io/" target="_blank">hijiangtao</a> 
+             | <a href="/about/">About me</a>
+             | <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script>
+             | <span class="label label-info" id="timeSpan"></span>
+         </small></p>
+    </footer>
+
+    </div>
+  </body>
+</html>

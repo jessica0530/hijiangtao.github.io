@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hijiangtao" />
+    <title>新手该如何使用git命令同步自己本地代码到github</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/feed/" rel="alternate" title="hijiangtao" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css" />
+    <link rel="stylesheet" href="/media/css/highlight.css" />
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <!--a script to set the timer-->
+  <script type="text/javascript">
+    function setTimeSpan(){
+            var date = new Date();
+            timeSpan.innerText=date.format('yyyy-MM-dd hh:mm:ss');
+    }
+    
+    Date.prototype.format = function(format)
+                {
+    var o =
+            {
+                "M+" : this.getMonth()+1, //month
+                "d+" : this.getDate(),    //day
+                "h+" : this.getHours(),   //hour
+                "m+" : this.getMinutes(), //minute
+                "s+" : this.getSeconds(), //second
+                "q+" : Math.floor((this.getMonth()+3)/3),  //quarter
+                "S" : this.getMilliseconds() //millisecond
+            }
+            if(/(y+)/.test(format))
+            format=format.replace(RegExp.$1,(this.getFullYear()+"").substr(4 - RegExp.$1.length));
+            for(var k in o)
+            if(new RegExp("("+ k +")").test(format))
+            format = format.replace(RegExp.$1,RegExp.$1.length==1 ? o[k] : ("00"+ o[k]).substr((""+ o[k]).length));
+            return format;
+                }
+  </script>
+  <body onLoad="setInterval(setTimeSpan,1000);">
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>新手该如何使用git命令同步自己本地代码到github</h1>
+        </header>
+        <nav><!--Define the Navigation links-->
+        <span><a title="网站首页" class="" href="/">HOME</a></span>
+        <span><a title="文章分类" class="" href="/categories/">CATEGORIES</a></span>
+        <span><a title="标签索引" class="" href="/tags/">TAGS</a></span>
+        <span><a title="友情链接" class="" href="/links/">LINKS</a></span>
+        <span><a title="留言版" class="" href="/guestbook/">GUESTBOOK</a></span>
+        <span><a title="关于作者" class="" href="/about/">ABOUT</a></span>
+        <span><a title="RSS订阅" class="" href="/feed/" target="_blank">SUBSCRIBE</a></span>
+        </nav>
+        <article class="content">
+        <section class="post">
+<p>昨天的问题本以为已经解决，今天刷着微博正准备看书时，发现老毛病又翻了，当输完<code>git push -u origin master</code>后，显示出来的又是如下语句，于是弱弱的我又打开google，准备解决这个问题。</p>
+
+<pre><code class="javascript"> ! [rejected]        master -&gt; master (non-fast-forward)
+error: 无法推送一些引用到 'https://github.com/hijiangtao/hijiangtao.github.io.git'
+提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+提示：再次推送前，先与远程变更合并（如 'git pull'）。详见
+提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+</code></pre>
+
+<p>再来重述一下我的问题所在：我已经建立了一个repository名为<code>hijiangtao.github.io</code>，现在我又写了一篇日志想提交到github上。简述为：github本地子模块更改后，update整个项目失败。</p>
+
+<ol>
+<li><p>首先依旧是<code>git init//初始化，会出现一个.get文件,可以通过ls -la查看</code>。</p></li>
+<li><p>添加本地已有文件到本地仓库：<code>git add _posts/2014-01-23-hello.md</code>,其中2014-01-23-hello.md是我测试用的文件。</p></li>
+<li><p>添加更新commit：<code>git commit  -m  "说明标签"</code></p></li>
+<li><p><code>git remote add origin https://github.com/用户名/库.git</code>,经过搜索发现其实origin相当于是个别名，这个可以自己随便写也可以写成当前文件夹的名。</p></li>
+<li><p>直到上一布过程都进行的正常，现在开始push操作：<code>git push -u origin master</code>,期间会会提示输入用户名和密码。而输入完之后会出现以下错误：</p>
+
+<pre><code class="`javascript"> To https://github.com/hijiangtao/hijiangtao.github.io.git
+  ! [rejected]        master -&gt; master (non-fast-forward)
+ error: 无法推送一些引用到 'https://github.com/hijiangtao/hijiangtao.github.io.git'
+ 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+ 提示：再次推送前，先与远程变更合并（如 'git pull'）。详见
+ 提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+</code></pre></li>
+</ol>
+
+
+<p>接下来就是解决办法了。</p>
+
+<ul>
+<li><p>输入如下语句：</p>
+
+<pre><code class="``javascript">  git config branch.master.remote origin
+  git config branch.master.merge refs/heads/master
+  git pull/*这时会出现一个配置文件，保存然后把他关了即可。*/
+</code></pre></li>
+<li><p>输入如下语句：</p>
+
+<pre><code class="``javascript">  git add _posts/2014-01-23-hello.md
+  git commit -m "second push"
+</code></pre></li>
+<li><p>输入完你会发现出现如下信息，这说明你到现在都运行正常：</p>
+
+<pre><code class="``javascript">  # 位于分支 master
+  # 您的分支领先 'origin/master' 共 2 个提交。
+  #   (use "git push" to publish your local commits)
+  #
+  nothing to commit, working directory clean
+</code></pre></li>
+<li><p>最后执行<code>git push -u origin master</code>，等待更新完毕，同步代码成功啦！</p></li>
+</ul>
+
+
+<hr />
+
+<p>最后，附上github官方自带的两个方法：</p>
+
+<ul>
+<li><p>Create a new repository on the command line</p>
+
+<pre><code class="``javascript">  touch README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin https://github.com/用户名/项目.git
+  git push -u origin master
+</code></pre></li>
+<li><p>Push an existing repository from the command line</p>
+
+<pre><code class="``javascript">  git remote add origin https://github.com/用户名/项目.git
+  git push -u origin master
+</code></pre></li>
+</ul>
+
+
+</section>
+<section class="meta">
+
+<br/>
+<br/>
+<span>
+	<a  href="http://hijiangtao.github.io/2014/01/23/myfirstblog/" class="pageNav"  >Previous(前一篇)</a>
+        &nbsp;&nbsp;&nbsp;
+        <a  href="http://hijiangtao.github.io/2014/01/24/2013summary/" class="pageNav"  >Next(后一篇)</a>
+</span>
+<hr>
+<span class="author">
+  <a href="http://hijiangtao.github.com">hijiangtao</a>
+</span>
+<span class="time">
+  /
+  <time datetime="2014-01-23">2014-01-23</time>
+</span>
+<br />
+<span class="publish_pretext">
+  Published in
+</span>
+
+<span class="categories">
+  categories
+  
+  <a href="/categories/#文档" title="文档">文档</a>&nbsp;
+  
+</span>
+
+
+<span class="tags">
+  tagged with 
+  
+  <a href="/tags/#github" title="github">github</a>&nbsp;
+  
+</span>
+
+</section>
+
+	<!--define the duoshuo plugin-->
+	<div class="ds-thread" data-thread-key="4" data-url="http://hijiangtao.github.io/2014/01/23/solvegithubpush/" data-title="新手该如何使用git命令同步自己本地代码到github" />
+	
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"datablog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+
+
+        </article>
+      </div>
+
+    <footer><!--footer settings-->
+        <p><small>
+            Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&<a href="http://github.com/hijiangtao/hijiangtao.github.io" target="_blank" title="项目主页">GitHub</a>
+             | Copyright©2014 <a href="http://hijiangtao.github.io/" target="_blank">hijiangtao</a> 
+             | <a href="/about/">About me</a>
+             | <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script>
+             | <span class="label label-info" id="timeSpan"></span>
+         </small></p>
+    </footer>
+
+    </div>
+  </body>
+</html>

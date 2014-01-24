@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hijiangtao" />
+    <title>微软商店应用：HiTravel</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/feed/" rel="alternate" title="hijiangtao" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css" />
+    <link rel="stylesheet" href="/media/css/highlight.css" />
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <!--a script to set the timer-->
+  <script type="text/javascript">
+    function setTimeSpan(){
+            var date = new Date();
+            timeSpan.innerText=date.format('yyyy-MM-dd hh:mm:ss');
+    }
+    
+    Date.prototype.format = function(format)
+                {
+    var o =
+            {
+                "M+" : this.getMonth()+1, //month
+                "d+" : this.getDate(),    //day
+                "h+" : this.getHours(),   //hour
+                "m+" : this.getMinutes(), //minute
+                "s+" : this.getSeconds(), //second
+                "q+" : Math.floor((this.getMonth()+3)/3),  //quarter
+                "S" : this.getMilliseconds() //millisecond
+            }
+            if(/(y+)/.test(format))
+            format=format.replace(RegExp.$1,(this.getFullYear()+"").substr(4 - RegExp.$1.length));
+            for(var k in o)
+            if(new RegExp("("+ k +")").test(format))
+            format = format.replace(RegExp.$1,RegExp.$1.length==1 ? o[k] : ("00"+ o[k]).substr((""+ o[k]).length));
+            return format;
+                }
+  </script>
+  <body onLoad="setInterval(setTimeSpan,1000);">
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>微软商店应用：HiTravel</h1>
+        </header>
+        <nav><!--Define the Navigation links-->
+        <span><a title="网站首页" class="" href="/">HOME</a></span>
+        <span><a title="文章分类" class="" href="/categories/">CATEGORIES</a></span>
+        <span><a title="标签索引" class="" href="/tags/">TAGS</a></span>
+        <span><a title="友情链接" class="" href="/links/">LINKS</a></span>
+        <span><a title="留言版" class="" href="/guestbook/">GUESTBOOK</a></span>
+        <span><a title="关于作者" class="" href="/about/">ABOUT</a></span>
+        <span><a title="RSS订阅" class="" href="/feed/" target="_blank">SUBSCRIBE</a></span>
+        </nav>
+        <article class="content">
+        <section class="post">
+<h2>开发笔记</h2>
+
+<p>本应用HiTravel是我在2013年小学期期间开发的Windows应用，是在王崇文教授开设的《软件工程实践》课程指导下完成的。开发周期10天，已经投入中国大陆市场供用户下载使用。以下将一些产品内容简介与开发详细信息列举出来，以供记录。</p>
+
+<hr />
+
+<h2>产品简介</h2>
+
+<p>本应用的自我定位是一个轻量级旅行型便携游记应用.总共大小只有200KB左右,但它却能够提供包括心情笔记、图片欣赏、游记书写阅读等众多丰富实用的功能。</p>
+
+<ul>
+<li><strong>主要功能</strong></li>
+</ul>
+
+
+<p>本款软件所要实现的功能分为以下两个主题:心情小窝、图片欣赏、旅游日记。</p>
+
+<p>整个应用通过和谐的优雅黑和气质红两种配色呈现,立志给用户以统一、优越的用户体验感受。</p>
+
+<p>主要设计功能体现在下面图片中:</p>
+
+<p><img src="/assets/2013-0903-hitravel-functions.jpg" title="主要设计功能思维图" alt="主要设计功能思维图" /></p>
+
+<center style="font-size:10px">主要设计功能思维图</center>
+
+
+<ul>
+<li><p><strong>运行效果展示</strong></p>
+
+<p>  1.<strong>自动问候</strong>：首页提供自动问候功能，输入你的名字即可开始体验！</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-1.jpg" title="自动问候功能" alt="" /></p>
+
+<p>  2.<strong>心情记录</strong>：*一次记录，两种心情记录！颠覆式心情笔记体验！</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-2.jpg" title="心情记录" alt="" /></p>
+
+<p>  3.<strong>心情小窝</strong>：心情小窝提供对你当前存有的心情笔记进行预览和选定功能。</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-3.jpg" title="心情小窝" alt="" /></p>
+
+<p>  4.<strong>美丽瞬间</strong>：点击获取图片，你可以查看图片名字、路径、创建日期等信息。</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-4.jpg" title="美丽瞬间" alt="" /></p>
+
+<p>  5.<strong>专属游记</strong>：在文本框中你可以通过多种工具对文本进行编辑，如图所示。</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-5.jpg" title="专属游记" alt="" /></p>
+
+<p>  6.<strong>极速搜索</strong>：打开文件，你可以在搜索框中进行快速文本定位。</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-6.jpg" title="极速搜索" alt="" /></p>
+
+<p>  7.<strong>版权信息</strong>：帮助界面，可以查看本应用的开发者信息。</p>
+
+<p>  <img src="/assets/2013-0903-hitravel-7.jpg" title="版权信息" alt="" /></p></li>
+</ul>
+
+
+<hr />
+
+<h2>App Brief Introduction</h2>
+
+<p>So,I know that I can search this app in windows app store,but——what's HiTravel?</p>
+
+<p>Yeah,HiTravel is a very simple app that can simply your travel experience.
+You can write down your dairy on it and save the journey to any where you like;
+You can edit your mood into the app safely,because only when you open the app can you see the mood info;
+You can open any pictures that you want to have a look at,and the same ime the picture's info will be displayed in the right form;
+You will find there exists too many small tools that can let you fully enjoy yourself into the app!</p>
+
+<p>Why not have a try at once?Shot the link and download it into your Windows 8 device right now!</p>
+
+<ul>
+<li>下载链接：<a href="http://apps.microsoft.com/windows/zh-cn/app/hitravel/694b73f1-8cd1-4752-84fc-dca78e1ae545">DownLoad</a></li>
+</ul>
+
+
+<hr />
+
+<h2>详细信息</h2>
+
+<ul>
+<li><p><strong>支持的处理器</strong>:x86, x64, ARM</p></li>
+<li><p><strong>操作系统（支持）</strong>:Windows 8中文版/Windows 8标准版/Windows 8专业版/Windows 8企业版/Windows 8.1预览版</p></li>
+<li><p><strong>硬件要求</strong>：</p>
+
+<ul>
+<li><strong>处理器</strong>：1 GHz 或更快（支持 PAE、NX 和 SSE2）</li>
+<li><strong>RAM</strong>：1GB（32 位）或 2GB（64 位）</li>
+<li><strong>硬盘空间</strong>：16GB（32 位）或 20GB（64 位）</li>
+<li><strong>图形卡</strong>：带有WDDM驱动程序的Microsoft DirectX 9图形设备</li>
+<li><strong>触控功能</strong>：支持多点触控的平板电脑或显示器</li>
+<li><strong>屏幕</strong>：1366 x 768的屏幕分辨率或更高</li>
+<li><strong>网络</strong>：具有网络通信功能或者WIFI无线接入功能</li>
+</ul>
+</li>
+<li><p><strong>应用运行语言</strong>:中文(中国)</p></li>
+<li><p><strong>类别</strong>：生活</p></li>
+<li><p><strong>应用大小</strong>:200KB左右</p></li>
+<li><p><strong><a href="mailto:hijiangtao@gmail.com">HiTravel 支持</a></strong></p></li>
+</ul>
+
+
+</section>
+<section class="meta">
+
+<br/>
+<br/>
+<span>
+	<a   class="pageNavInvalid"  >Previous(前一篇)</a>
+        &nbsp;&nbsp;&nbsp;
+        <a  href="http://hijiangtao.github.io/2013/11/11/cs/" class="pageNav"  >Next(后一篇)</a>
+</span>
+<hr>
+<span class="author">
+  <a href="http://hijiangtao.github.com">hijiangtao</a>
+</span>
+<span class="time">
+  /
+  <time datetime="2013-09-03">2013-09-03</time>
+</span>
+<br />
+<span class="publish_pretext">
+  Published in
+</span>
+
+<span class="categories">
+  categories
+  
+  <a href="/categories/#项目" title="项目">项目</a>&nbsp;
+  
+</span>
+
+
+<span class="tags">
+  tagged with 
+  
+  <a href="/tags/#c#" title="c#">c#</a>&nbsp;
+  
+  <a href="/tags/#微软" title="微软">微软</a>&nbsp;
+  
+</span>
+
+</section>
+
+	<!--define the duoshuo plugin-->
+	<div class="ds-thread" data-thread-key="13" data-url="http://hijiangtao.github.io/2013/09/03/hitravel/" data-title="微软商店应用：HiTravel" />
+	
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"datablog"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+
+
+        </article>
+      </div>
+
+    <footer><!--footer settings-->
+        <p><small>
+            Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&<a href="http://github.com/hijiangtao/hijiangtao.github.io" target="_blank" title="项目主页">GitHub</a>
+             | Copyright©2014 <a href="http://hijiangtao.github.io/" target="_blank">hijiangtao</a> 
+             | <a href="/about/">About me</a>
+             | <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script>
+             | <span class="label label-info" id="timeSpan"></span>
+         </small></p>
+    </footer>
+
+    </div>
+  </body>
+</html>
