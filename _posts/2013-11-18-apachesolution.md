@@ -23,7 +23,9 @@ tags: apache
 
 >httpd: Syntax error on line 175 of D:/apache/conf/httpd.conf: Can’t locate API module structure `php4_module’ in file D:/php/php5apache2_2.dll: No error
 
-从上述信息中我们可以看出错误出在httpd.conf中175行的代码`LoadModele php4_module D:\php\php5apache2_2.dll`，其中说明我模块选择错了。由于apache版本的不同，在配置`LoadModule php5_module D:\php\php5apache2_2.dll`这段代码的时候一定要特别注意。然后改成`LoadModele php5_module D:\php\php5apache2_2.dll`，再运行`httpd -t`，提示： 
+从上述信息中我们可以看出错误出在httpd.conf中175行的代码`LoadModele php4_module D:\php\php5apache2_2.dll`，其中说明我模块选择错了。由于apache版本的不同，在配置`LoadModule php4_module D:\php\php5apache2_2.dll`这段代码的时候一定要特别注意。
+
+然后改成`LoadModele php5_module D:\php\php5apache2_2.dll`，再运行`httpd -t`，提示： 
 
 >[Fri Nov 16 20:30:31 2013] [crit] Apache is running a threaded MPM, but your PHP Module is not compiled to be threadsafe.  You need to recompile PHP.
 Pre-configuration failed 
