@@ -3,12 +3,34 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="hijiangtao" />
-    <title>Data.Blog</title>
+    <title>Data.Lab</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/feed/" rel="alternate" title="hijiangtao" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css" />
     <link rel="stylesheet" href="/media/css/highlight.css" />
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="/js/renren_js_sdk/renren.js"></script>
+    <script type="text/javascript">
+      function sendFeed() {
+  	  var uiOpts = {
+  		  url : "feed",
+  		  display : "popup",
+  		  params : {
+  		    "url":"http://www.hijiangtao.github.io/weibo.html",
+  		    "name":"新鲜事测试，这里是标题",
+  		    "description":"现在我正在测试人人网新鲜事功能，不要理我",
+  		    "action_name": "过来一起玩",
+  		    "action_link":"http://www.hijiangtao.weebly.com/"
+  		  },
+  		  onSuccess: function(r){},
+  		  onFailure: function(r){} 
+  	  };
+  	  Renren.ui(uiOpts);
+  	}
+    </script>
+    
   </head>
   <!--a script to set the timer-->
   <script type="text/javascript">
@@ -45,6 +67,8 @@
     <div id="container">
         <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=1679954022&verifier=3a8a960d&dpc=1"></iframe>
         <wb:publish action="publish" type="web" language="zh_cn" button_type="red" button_size="middle" button_text="Feed to Weibo" uid="1679954022" refer="y" default_image="" appkey="okYzf" ></wb:publish>
+        <script type="text/javascript">Renren.init({appId:144142});</script>
+        <a href="javascript:sendFeed();">点此发送新鲜事</a>
     </div>
     <footer><!--footer settings-->
         <p><small>
