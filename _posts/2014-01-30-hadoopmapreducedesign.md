@@ -75,7 +75,7 @@ MapReduce借用函数式编程的思想，通过把海量数据集的常见操�
 
 ****
 
-![](/assets2014-01-30-mapreduce-cal.jpg "MapReduce任务计算流程示意图")
+![](/assets/2014-01-30-mapreduce-cal.jpg "MapReduce任务计算流程示意图")
 <center style="font-size:10px">MapReduce任务计算流程示意图</center>
 
 **MR任务的基本计算流程：**
