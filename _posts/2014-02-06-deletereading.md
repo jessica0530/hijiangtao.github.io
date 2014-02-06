@@ -1,7 +1,7 @@
 ---
 date: 2014-02-06
 layout: post
-title: 互联网思维三大定义
+title: 《删除》读书笔记
 thread: 21
 categories: 阅读
 tags: data
