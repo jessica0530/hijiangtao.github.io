@@ -1,5 +1,5 @@
 ---
-date: 2014-02-14
+date: 2014-02-15
 layout: post
 title: Linux静态IP设置与正常网络设置的区别
 thread: 31

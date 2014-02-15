@@ -1,5 +1,5 @@
 ---
-date: 2014-02-14 20:00:00
+date: 2014-02-15 20:00:00
 layout: post
 title: Ubuntu开机出现speech-dispatcher disabled解决办法
 thread: 32
