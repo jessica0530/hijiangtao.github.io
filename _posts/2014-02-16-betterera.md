@@ -39,7 +39,7 @@ tags: data essay
 
 2013年被湖南卫视誉为电视媒体的大数据元年，暂不管其观点如何，但毋庸置疑的一点：湖南卫视这一年的表现所呈现的数据确实显现了其巨大的经济效应成果。
 
-<center><object width=640 height=515><param name="movie" value="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=64148928&autoplay=false&from=page"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="Transparent"></param><embed width=480 height=400 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=64148928&autoplay=false&from=page" type="application/x-shockwave-flash"/></embed></object></center>
+<center><object width=480 height=400><param name="movie" value="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=64148928&autoplay=false&from=page"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="Transparent"></param><embed width=480 height=400 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=64148928&autoplay=false&from=page" type="application/x-shockwave-flash"/></embed></object></center>
 
 ----------
 
