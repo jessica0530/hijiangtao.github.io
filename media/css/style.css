@@ -44,9 +44,10 @@ pre code {
   overflow: auto; }
 
 code {
-	font-size: 10px;
+  font-size: 11px;
   background-color: #BBBBBB;
-  padding: 1px 2px;
+  line-height: 1.0;
+  padding: 0px 1px;
   border: 1px dashed #e0e0e0; }
 
 #container{width:600px;margin:2em auto;display:block;padding:0 2em;}
