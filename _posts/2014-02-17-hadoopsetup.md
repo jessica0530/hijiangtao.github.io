@@ -214,6 +214,10 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 
 ##错误笔记
 
+* password:localhost:permission denied,please try again
+
+碰到这种情况大都是没有给hadoop用户赋予sudo权限所致。所以打开你的`/etc/sudoers`加上`hadoop ALL=(ALL:ALL) ALL`吧。
+
 * Tasktracker无法正常启动
 
 通过查找logs中tasktracker的错误日志发现其中有一个warn是相应目录下`temp/hadoop_tmp.mapred/local/文件的全线被设置成`not writable`了。于是通过修改权限解决了上述的问题，命令如下：
