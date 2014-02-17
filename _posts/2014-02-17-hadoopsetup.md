@@ -240,7 +240,7 @@ sudo chmod 777 /home/hadoop/temp/hadoop_tmp.mapred/local/
 
 * SafeMode: ON - HDFS unavailable，导致nodes显示为0，没有namenode启动。
 
-经过查询是hdfs-site.xml配置中的dfs.name.dir的value所在的目录出了问题，显示是：* is in an inconsistent state: storage directory does not exist or is not accessible.其中*代表那个目录，不断的重启与格式化总是不能解决这个问题，删不删除这个目录也都无济于事。是的，我疯了，你看到我疯狂的眼神了么？终于，突然想到了`chown`的作用，于是我执行了如下指令：
+经过查询是hdfs-site.xml配置中的dfs.name.dir的value所在的目录出了问题，显示是：xxx is in an inconsistent state: storage directory does not exist or is not accessible.其中xxx代表那个目录，不断的重启与格式化总是不能解决这个问题，删不删除这个目录也都无济于事。是的，我疯了，你看到我疯狂的眼神了么？终于，突然想到了`chown`的作用，于是我执行了如下指令：
 
 ```
 sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
