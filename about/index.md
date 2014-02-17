@@ -6,7 +6,7 @@ comments: no
 
 Greetings,I'm an undergraduate student at School of Software, Beijing Institute of Technology. 
 
-My major is Digital Media Technology,I'm interested in Computer Vision and Digital Media.I'm the Director of Data Mining Laboratory,which belongs to  the Software technology innovation base.
+My major is Digital Media Technology,I'm interested in Computer Vision and Digital Media.I'm the Director of Data Mining Laboratory,which belongs to the Software Technology Innovation Base.
 
 I'm now having a researching project with Professor Tang in Data Mining and Processing from January,2014.
 
@@ -18,7 +18,7 @@ I'm now having a researching project with Professor Tang in Data Mining and Proc
 
 ###Contact / 联系方式：
 
-网站/Website : [{{ site.website }}]({{ site.website-url }})
+网站/Website : [{{ site.website }}]({{ site.website-url }}) - to be updated.
 
 博客/Data.Blog : [{{ site.name }}]({{ site.url }})
 
