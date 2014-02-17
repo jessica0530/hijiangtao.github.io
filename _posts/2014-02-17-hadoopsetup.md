@@ -178,36 +178,36 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
     
     
 ###4.1 测试hadoop配置是否成功
-
+   
 通过以下命令，当我们看到hadoop的版本时则表明配置无误。
-
+   
 ```
-    hadoop version
-```
-
+hadoop version
+``` 
+   
 ###4.2 格式化namenode
-
+   
 ```
 cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ./hadoop namenode –format
-```
-
+``` 
+   
 ###4.3 启动hadoop进程
-
+   
 ```
 cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ./start-all.sh
 ```
-
+   
 通过java的`jps`命令来查看进程是否启动成功，成功启动SecondaryNamenode，JobTracker，NameNode，DataNode，TraskTracker五个进程则OK。
 
 如果有一个进程没有启动成功，就表示整个集群没有正常工作，进入`/home/hadoop/software/hadoop/hadoop-1.2.1/libexec/../logs/`目录下可以查看失败日记。
-
+   
 ###4.4 从浏览器查看hadoop信息
+   
+**查看jobtracker信息**:
 
-可以从本机或者其他机器的浏览器访问hadoop，**查看jobtracker信息**，输入如下网址：
-
-<http://10.1.151.168:50030/jobtracker.jsp>，其中10.1.151.168为我该机器的IP地址。
+可以从本机或者其他机器的浏览器访问hadoop，输入如下网址：<http://10.1.151.168:50030/jobtracker.jsp>，其中10.1.151.168为我该机器的IP地址。
 
 **查看namenode信息**：
 
@@ -222,11 +222,11 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ##错误笔记
     
     
-* password:localhost:permission denied,please try again
+* **password:localhost:permission denied,please try again**
 
 碰到这种情况大都是没有给hadoop用户赋予sudo权限所致。所以打开你的`/etc/sudoers`加上`hadoop ALL=(ALL:ALL) ALL`吧。
 
-* Tasktracker无法正常启动
+* **Tasktracker无法正常启动**
 
 通过查找logs中tasktracker的错误日志发现其中有一个warn是相应目录下`temp/hadoop_tmp.mapred/local/`文件的权限被设置成`not writable`了。于是通过修改权限解决了上述的问题，命令如下：
 
@@ -234,11 +234,11 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 sudo chmod 777 /home/hadoop/temp/hadoop_tmp.mapred/local/
 ```
 
-* 每次开机都需要把/etc/profile重新source一遍，不然就显示没装jdk
+* **每次开机都需要把/etc/profile重新source一遍，不然就显示没装jdk**
 
 这个问题还是没有解决，因为还没找到原因所在。怎么办呢，算了，每次繁琐一点source一遍吧，暂时先这样了。
 
-* SafeMode: ON - HDFS unavailable，导致nodes显示为0，没有namenode启动。
+* **SafeMode: ON - HDFS unavailable**，导致nodes显示为0，没有namenode启动。
 
 经过查询是hdfs-site.xml配置中的dfs.name.dir的value所在的目录出了问题，显示是：xxx is in an inconsistent state: storage directory does not exist or is not accessible.其中xxx代表那个目录，不断的重启与格式化总是不能解决这个问题，删不删除这个目录也都无济于事。是的，我疯了，你看到我疯狂的眼神了么？终于，突然想到了`chown`的作用，于是我执行了如下指令：
 
