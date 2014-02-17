@@ -71,6 +71,8 @@ tags: data essay
 
 <center><embed src="http://player.youku.com/player.php/sid/XNjQ4Nzc4MTUy/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></center>
 
+----------
+
 ##结语
 
 大数据可能是为数不多的并不遵守技术成熟度曲线的aspect之一。不管将来你从事哪些行业，你可能都会发现：你的生活方方面面都会或多或少的受到数据的影响，而数据，早已不是曾经的数据了。
