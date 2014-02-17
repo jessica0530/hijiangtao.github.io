@@ -8,8 +8,8 @@ tags: hadoop
 ---
 
 ##一、硬件环境
-   
-   
+    
+    
 **Hadoop搭建系统环境**：三台完全一样的Linux ubuntu-13.04-desktop-i386系统，其中一个做Namenode，另外两个做Datanode。（三个ubuntu系统均搭建在硬件虚拟机上）
 
 **Hadoop安装目标版本**：Hadoop1.2.1
@@ -25,8 +25,8 @@ tags: hadoop
 ----------
 
 ##二、软件环境准备
-   
-   
+    
+    
 ###2.1 Hadoop
 
 Hadoop Release 1.2.1(stable)版本，下载链接：<http://mirror.nexcess.net/apache/hadoop/common/hadoop-1.2.1/>，选择hadoop-1.2.1-bin.tar.gz文件下载。
@@ -42,8 +42,8 @@ Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 ----
 
 ##三、安装步骤
-   
-   
+    
+    
 ###3.1 添加一个专门为hadoop使用的用户
 
 * 命令行输入：
@@ -175,8 +175,8 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 ----
 
 ##四、启动hadoop
-   
-   
+    
+    
 ###4.1 测试hadoop配置是否成功
 
 通过以下命令，当我们看到hadoop的版本时则表明配置无误。
@@ -220,8 +220,8 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ----
 
 ##错误笔记
-   
-   
+    
+    
 * password:localhost:permission denied,please try again
 
 碰到这种情况大都是没有给hadoop用户赋予sudo权限所致。所以打开你的`/etc/sudoers`加上`hadoop ALL=(ALL:ALL) ALL`吧。
@@ -269,8 +269,8 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 ----
 
 ##后记
-   
-   
+    
+    
 Hadoop1.2.1单机版搞定，老泪纵横啊！要是早一天我就可以向老师汇报我的胜利果实了！明天加油搞定全分布式集群配置！
 
 感谢这段时间被我不断骚扰的非哥的帮助，感谢这段时间被我不断骚扰的中南学长和伍翀学长。感谢Google，谢谢老师、实验室的支持。
