@@ -9,7 +9,9 @@ tags: data essay
 
 有关技术和兴趣，有关艺术和概念，有关大数据与生活。存档留念。
 
-##无关技术，只有梦想：《我在清华等你来》
+----------
+
+##〇、无关技术，只有梦想：《我在清华等你来》
 
 <center><object width=480 height=400><param name="movie" value="http://share.vrs.sohu.com/798555/v.swf&topBar=1&autoplay=false&plid=1013110&pub_catecode=&from=page"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="Transparent"></param><embed width=480 height=400 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/798555/v.swf&topBar=1&autoplay=false&plid=1013110&pub_catecode=&from=page" type="application/x-shockwave-flash"/></embed></object></center>
 
