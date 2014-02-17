@@ -8,7 +8,8 @@ tags: hadoop
 ---
 
 ##一、硬件环境
-
+   
+   
 **Hadoop搭建系统环境**：三台完全一样的Linux ubuntu-13.04-desktop-i386系统，其中一个做Namenode，另外两个做Datanode。（三个ubuntu系统均搭建在硬件虚拟机上）
 
 **Hadoop安装目标版本**：Hadoop1.2.1
@@ -24,7 +25,8 @@ tags: hadoop
 ----------
 
 ##二、软件环境准备
-
+   
+   
 ###2.1 Hadoop
 
 Hadoop Release 1.2.1(stable)版本，下载链接：<http://mirror.nexcess.net/apache/hadoop/common/hadoop-1.2.1/>，选择hadoop-1.2.1-bin.tar.gz文件下载。
@@ -40,20 +42,21 @@ Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 ----
 
 ##三、安装步骤
-
+   
+   
 ###3.1 添加一个专门为hadoop使用的用户
 
 * 命令行输入：
 
 ```
-    sudo addgroup hadoop
-    sudo adduser -ingroup hadoop hadoop
+sudo addgroup hadoop
+sudo adduser -ingroup hadoop hadoop
 ```
 
 * 设置hadoop用户的sudo权限：
 
 ```
-    sudo vim /etc/sudoers
+sudo vim /etc/sudoers
 ```
 
 * 在`root ALL=(ALL:ALL) ALL`下面加一行`hadoop ALL=(ALL:ALL) ALL`
@@ -65,17 +68,17 @@ Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 * 建立目录
 
 ```
-    sudo mkdir /home/hadoop/install
-    sudo mkdir /home/hadoop/software/hadoop /*该目录存储hadoop程序文件*/
-    sudo mkdir /home/hadoop/software/java /*该目录存储jdk程序文件。*/
-    sudo mkdir /home/hadoop/software/eclipse /*该目录存储eclipse程序文件。*/
+sudo mkdir /home/hadoop/install
+sudo mkdir /home/hadoop/software/hadoop /*该目录存储hadoop程序文件*/
+sudo mkdir /home/hadoop/software/java /*该目录存储jdk程序文件。*/
+sudo mkdir /home/hadoop/software/eclipse /*该目录存储eclipse程序文件。*/
 ```
 
 * 解压安装压缩包
 
 ```
-    sudo tar -xzvf '/home/master/下载/jdk-7u40-linux-i586.tar.gz' -C /home/hadoop/software/java/
-    sudo tar -xzvf '/home/master/下载/hadoop-1.2.1-bin.tar.gz' -C /home/hadoop/software/hadoop/
+sudo tar -xzvf '/home/master/下载/jdk-7u40-linux-i586.tar.gz' -C /home/hadoop/software/java/    
+sudo tar -xzvf '/home/master/下载/hadoop-1.2.1-bin.tar.gz' -C /home/hadoop/software/hadoop/
 ```
 
 ###3.3 配置Hadoop
@@ -85,11 +88,11 @@ Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 添加JAVA_HOME,CLASSPATH环境变量。使用`sudo vi /etc/profile`命令编辑profile文件，在文件末尾加上以下内容：
 
 ```
-    HADOOP_INSTALL=/home/hadoop/software/hadoop/hadoop-1.2.1/
-    JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
-    PATH=$JAVA_HOME/bin:$HADOOP_INSTALL/bin:$PATH
-    CLASSPATH=$JAVA_HOME/lib
-    export JAVA_HOME PATH CLASSPATH HADOOP_INSTALL
+HADOOP_INSTALL=/home/hadoop/software/hadoop/hadoop-1.2.1/
+JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
+PATH=$JAVA_HOME/bin:$HADOOP_INSTALL/bin:$PATH
+CLASSPATH=$JAVA_HOME/lib
+export JAVA_HOME PATH CLASSPATH HADOOP_INSTALL
 ```
 
 然后保存退出，使用`source /etc/profile`使刚刚的更改立即生效。
@@ -106,10 +109,10 @@ Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 
 使用以下命令设置ssh无密码连接：
 
-```
-    ssh-keygen
-    cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
-    ssh localhost
+```    
+ssh-keygen
+cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+ssh localhost
 ```
 
 最后一行代码为测试使用。首次运行会提示是否继续，输入yes，回车，如果不要求输入密码，就表示成功了。
@@ -169,11 +172,15 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 <!—该项配置用来配置jobtracker节点，localhost也可以换成本机的IP地址；真实分布模式下注意更改成实际jobtracker机器的IP地址–>
 ```
 
-##四、启动hadoop
+----
 
+##四、启动hadoop
+   
+   
 ###4.1 测试hadoop配置是否成功
 
 通过以下命令，当我们看到hadoop的版本时则表明配置无误。
+
 ```
     hadoop version
 ```
@@ -213,14 +220,15 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ----
 
 ##错误笔记
-
+   
+   
 * password:localhost:permission denied,please try again
 
 碰到这种情况大都是没有给hadoop用户赋予sudo权限所致。所以打开你的`/etc/sudoers`加上`hadoop ALL=(ALL:ALL) ALL`吧。
 
 * Tasktracker无法正常启动
 
-通过查找logs中tasktracker的错误日志发现其中有一个warn是相应目录下`temp/hadoop_tmp.mapred/local/文件的全线被设置成`not writable`了。于是通过修改权限解决了上述的问题，命令如下：
+通过查找logs中tasktracker的错误日志发现其中有一个warn是相应目录下`temp/hadoop_tmp.mapred/local/`文件的权限被设置成`not writable`了。于是通过修改权限解决了上述的问题，命令如下：
 
 ```
 sudo chmod 777 /home/hadoop/temp/hadoop_tmp.mapred/local/
@@ -242,8 +250,27 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 
 ----
 
-**后记**
+最后，附上几篇我之前装Hadoop2.2.0时记下的笔记，希望对到来的你有所帮助：
 
+1. [“软件包*没有可供安装的候选者”解决方案](http://hijiangtao.github.io/2014/02/16/apt-getproblem/)
+
+2. [Ubuntu开机出现speech-dispatcher disabled解决办法](http://hijiangtao.github.io/2014/02/15/linuxspeechproblem/)
+
+3. [搭建Hadoop环境配置所需软件汇总](http://hijiangtao.github.io/2014/02/14/hadoopsetupsoftware/)
+
+4. [jdk安装与配置教程](http://hijiangtao.github.io/2014/02/14/hadoopjdk/)
+
+5. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/2014/02/14/hadoopconfmodify/)
+
+6. [Ubuntu系统网络管理器显示“设备未托管”解决方法](http://hijiangtao.github.io/2014/02/13/ubuntunetworkmanager/)
+
+7. [因修改/etc/sudoers权限导致sudo和su无法使用的解决方法](http://hijiangtao.github.io/2014/02/13/sudosolution/)
+
+----
+
+##后记
+   
+   
 Hadoop1.2.1单机版搞定，老泪纵横啊！要是早一天我就可以向老师汇报我的胜利果实了！明天加油搞定全分布式集群配置！
 
 感谢这段时间被我不断骚扰的非哥的帮助，感谢这段时间被我不断骚扰的中南学长和伍翀学长。感谢Google，谢谢老师、实验室的支持。
