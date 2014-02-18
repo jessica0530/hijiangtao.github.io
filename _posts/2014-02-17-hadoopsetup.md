@@ -10,7 +10,7 @@ tags: hadoop
 ##一、硬件环境
     
     
-**Hadoop搭建系统环境**：三台完全一样的Linux ubuntu-13.04-desktop-i386系统，其中一个做Namenode，另外两个做Datanode。（三个ubuntu系统均搭建在硬件虚拟机上）
+**Hadoop搭建系统环境**：一台Linux ubuntu-13.04-desktop-i386系统，既做Namenode，又做Datanode。（ubuntu系统搭建在硬件虚拟机上）
 
 **Hadoop安装目标版本**：Hadoop1.2.1
 
