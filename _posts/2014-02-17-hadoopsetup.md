@@ -2,7 +2,7 @@
 date: 2014-02-17
 layout: post
 title: Hadoop1.2.1伪分布模式安装教程
-thread: 35
+thread: 36
 categories: 教程
 tags: hadoop
 ---
