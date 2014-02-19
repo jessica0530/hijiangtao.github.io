@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /bin/
+Sitemap: http://hijiangtao.github.io/sitemap
