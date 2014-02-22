@@ -81,9 +81,9 @@ Stuhlinger 很快给Jucunda修女回了信，同时还附带了一张题为“�
 
 恩斯特-史都林格
 
-<div text-align:="right">科学副总监</div>
+科学副总监
 
-<div text-align:="right">1970年5月6日</div>
+1970年5月6日
 
 ----
 
