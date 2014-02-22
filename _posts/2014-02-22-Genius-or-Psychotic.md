@@ -1,5 +1,5 @@
 ---
-date: 2014-02-21
+date: 2014-02-22
 layout: post
 title: 《天才在左疯子在右》阅读笔记
 thread: 46
