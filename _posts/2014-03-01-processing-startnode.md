@@ -4,10 +4,10 @@ layout: post
 title: Processing快速入门学习笔记
 thread: 55
 categories: 教程
-tags: processing
+tags: Processing
 ---
 
-![Processing Logo](/assets/2014-03-01-processing-logo.png "Processing Logo")
+![Processing Logo](/assets/2014-03-01-Processing-logo.png "Processing Logo")
 <center>Processing Logo</center>
 
 前几天听朋友说了Processing这个非常棒的可视化工具，不仅效果显著而且简单易懂，想想数据分析最后一步就是数据可视化，与其之后再来看不如现在先了解一点。于是今天花了一点时间来学学这个，虽然还不会编写，但玩玩已有的效果已经不成问题了。
@@ -25,7 +25,7 @@ tags: processing
 2. 开发这套软件的目的，是为了教导学习者一些以视觉呈现为主的计算机程序基础，并且将这套软件看作是一个软件的描绘本，以及专业的制作工具。 
 3. Processing是由一群艺术家及设计师所开发的，在相同的领域上，是其它商业性软件开发工具之外，另一个可以选择的工具。 
 
-**Processing官方网站**：<http://processing.org/>
+**Processing官方网站**：<http://Processing.org/>
 
 
 ----------
@@ -36,11 +36,11 @@ tags: processing
 
 根据你电脑操作系统的不同，下载相应的Processing版本，官网提供Windows 64-bit、Windows 32-bit、Linux 64-bit、Linux 32-bit、Mac OS X等五种系统版本的下载。
 
-Processing软件下载地址：[Processing](http://processing.org/download/)
+Processing软件下载地址：[Processing](http://Processing.org/download/)
 
 由于我是在Windows上运行的，于是我下载的是Windows64-bit下的一个压缩包，下载完毕解压缩。
 
-还有什么？没了！直接打开**processing.exe**就可以运行了。
+还有什么？没了！直接打开**Processing.exe**就可以运行了。
 
 
 ----------
@@ -105,15 +105,15 @@ Processing支持的大部分语法规则和C几乎是一样的，包括注释（
 
 我们知道如果要画一个三维的图形，肯定要确定它的三维位置。在数学上，X轴是向右递增的，Y轴是向上递增的，Z轴是向外递增的；
 
-![数学上坐标的规定](/assets/2014-03-01-processing-xyz-math.png "数学上坐标的规定")
+![数学上坐标的规定](/assets/2014-03-01-Processing-xyz-math.png "数学上坐标的规定")
 <center>数学上坐标的规定</center>
 
 在processing程序中，X轴是向右递增的，Y轴是向下递增的，Z轴是向外递增的。
 
-![Processing上坐标的规定](/assets/2014-03-01-processing-xyz-pro.png "Processing上坐标的规定")
+![Processing上坐标的规定](/assets/2014-03-01-Processing-xyz-pro.png "Processing上坐标的规定")
 <center>Processing上坐标的规定</center>
 
-在Processing中绘画基本的几何图形非常简单，只需要调用现有的方法即可实现。指令参考：[Processing Reference](http://www.processing.org/reference/)
+在Processing中绘画基本的几何图形非常简单，只需要调用现有的方法即可实现。指令参考：[Processing Reference](http://www.Processing.org/reference/)
 
 ----
 
@@ -196,17 +196,25 @@ void draw(){
 ##五、学习更多
 
 **Processing官方资料**
-<http://processing.org/exhibition/>
-<http://processing.org/reference/>
-<http://processing.org/learning/>
-<http://processing.org/hacks/>
+
+<http://Processing.org/exhibition/>
+
+<http://Processing.org/reference/>
+
+<http://Processing.org/learning/>
+
+<http://Processing.org/hacks/>
 
 **Processing作品收集**
+
 <http://www.processingblogs.org/>
+
 <http://www.openprocessing.org/>
 
 **Processing样例**
+
 <http://builtwithprocessing.org/browser/browse.php>
 
 **网页动画/JavaScript**
+
 <http://processingjs.org/>
