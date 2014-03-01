@@ -7,7 +7,7 @@ categories: 教程
 tags: Processing
 ---
 
-![Processing Logo](/assets/2014-03-01-Processing-logo.png "Processing Logo")
+![Processing Logo](/assets/2014-03-01-processing-logo.png "Processing Logo")
 <center>Processing Logo</center>
 
 前几天听朋友说了Processing这个非常棒的可视化工具，不仅效果显著而且简单易懂，想想数据分析最后一步就是数据可视化，与其之后再来看不如现在先了解一点。于是今天花了一点时间来学学这个，虽然还不会编写，但玩玩已有的效果已经不成问题了。
@@ -106,12 +106,12 @@ Processing支持的大部分语法规则和C几乎是一样的，包括注释（
 
 我们知道如果要画一个三维的图形，肯定要确定它的三维位置。在数学上，X轴是向右递增的，Y轴是向上递增的，Z轴是向外递增的；
 
-![数学上坐标的规定](/assets/2014-03-01-Processing-xyz-math.png "数学上坐标的规定")
+![数学上坐标的规定](/assets/2014-03-01-processing-xyz-math.png "数学上坐标的规定")
 <center>数学上坐标的规定</center>
 
 在processing程序中，X轴是向右递增的，Y轴是向下递增的，Z轴是向外递增的。
 
-![Processing上坐标的规定](/assets/2014-03-01-Processing-xyz-pro.png "Processing上坐标的规定")
+![Processing上坐标的规定](/assets/2014-03-01-processing-xyz-pro.png "Processing上坐标的规定")
 <center>Processing上坐标的规定</center>
 
 在Processing中绘画基本的几何图形非常简单，只需要调用现有的方法即可实现。指令参考：[Processing Reference](http://www.Processing.org/reference/)
