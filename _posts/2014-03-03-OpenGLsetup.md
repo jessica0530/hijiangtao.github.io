@@ -35,6 +35,8 @@ sudo apt-get install libgl1-mesa-dev
 sudo apt-get install libglu1-mesa-dev
 ```
 
+然后执行：
+
 ```
 sudo apt-get install libglut-dev
 ```
@@ -46,7 +48,7 @@ sudo apt-get install libglut-dev
 >正在读取状态信息... 完成       
 >E: 未发现软件包 libglut-dev
 
-没有找到原因，但通过网上所说将该命令改成如下命令即可正确通过了。
+没有找到原因，但通过网上所说将该`sudo apt-get install libglut-dev`改成如下命令即可正确通过了。
 
 ```
 sudo apt-get install freeglut3-dev
