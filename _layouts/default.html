@@ -43,6 +43,24 @@
       <div id="main" role="main">
         <header>
         <h1>{{ page.title }}</h1>
+        
+        <form>
+        <input type="text" id="st-search-input" class="st-search-input" />
+        </form>
+        
+        <script type="text/javascript">
+        var Swiftype = window.Swiftype || {};
+          (function() {
+            Swiftype.key = 'uovyVvHHubhbsiKKMDpK';
+            Swiftype.renderStyle = 'inline';
+        
+            /** DO NOT EDIT BELOW THIS LINE **/
+            var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+            script.src = "//s.swiftypecdn.com/embed.js";
+            var entry = document.getElementsByTagName('script')[0];
+            entry.parentNode.insertBefore(script, entry);
+          }());
+        </script>
         </header>
         <nav><!--Define the Navigation links-->
         <span><a title="网站首页" class="" href="/">HOME</a></span>
@@ -54,6 +72,8 @@
         <span><a title="RSS订阅" class="" href="/feed/" target="_blank">SUBSCRIBE</a></span>
         </nav>
         <article class="content">
+        <!-- Place this div where you would like the results to be displayed. -->
+        <div id="st-results-container"></div>
         {{ content }}
         </article>
       </div>
