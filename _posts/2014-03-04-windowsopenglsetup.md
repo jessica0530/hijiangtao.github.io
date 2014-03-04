@@ -30,6 +30,8 @@ OpenGL相比DirectX更优越的特性：
 
 下载GLUT：[下载地址](http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip)
 
+----
+
 ##二、配置路径
 
 1. 将下载的压缩包解开，将得到5个文件。
@@ -41,6 +43,8 @@ OpenGL相比DirectX更优越的特性：
 4. 最后把glut32.dll和glut.dll复制到`C:\Windows\System32`中.
 
 以上步骤中若难以找到文件夹可以使用微软的搜索功能（好吧，这可能使句废话）。
+
+----
 
 ##三、测试环境
 
@@ -174,6 +178,8 @@ int main(int argc, char* argv[])
 
 ![](/assets/2014-03-04-windowsopenglexample.png "Windows下OpenGL测试效果图")
 <center>Windows下OpenGL测试效果图</center>
+
+----
 
 ##四、错误及解决方案
 
