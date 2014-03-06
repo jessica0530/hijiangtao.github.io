@@ -1,5 +1,5 @@
 ---
-date: 2014-03-06
+date: 2014-03-06 10:00:00
 layout: post
 title: OpenGL学习笔记：创建一个多边形
 thread: 60
