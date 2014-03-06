@@ -1,7 +1,7 @@
 ---
 date: 2014-03-06 9:00:00
 layout: post
-title: OpenGL学习笔记：创建一个OpenGL窗口
+title: OpenGL学习笔记1：创建一个OpenGL窗口
 thread: 59
 categories: 教程
 tags: OpenGL

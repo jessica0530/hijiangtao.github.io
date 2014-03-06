@@ -1,7 +1,7 @@
 ---
 date: 2014-03-06 10:00:00
 layout: post
-title: OpenGL学习笔记：创建一个多边形
+title: OpenGL学习笔记2：创建一个多边形
 thread: 60
 categories: 教程
 tags: OpenGL
@@ -14,7 +14,7 @@ tags: OpenGL
 
 ----
 
-本部分笔记记录的是使用OpenGL创建一个多边形并在窗口中显示。代码部分比较9简单，基于前一部分的笔记代码上只需要改写两个函数即可实现。之前的笔迹可以参考[OpenGL学习笔记：创建一个OpenGL窗口
+本部分笔记记录的是使用OpenGL创建一个多边形并在窗口中显示。代码部分比较9简单，基于前一部分的笔记代码上只需要改写两个函数即可实现。之前的笔迹可以参考[OpenGL学习笔记1：创建一个OpenGL窗口
 ](http://hijiangtao.github.io/2014/03/06/CreateAOpenGLWindow/)
 
 在DrawGLScene()过程中增加代码如下，其中有关glTranslatef(x, y, z)的使用推荐查看OpenGL坐标转换部分内容：
