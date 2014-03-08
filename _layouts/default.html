@@ -84,7 +84,7 @@
 		scrollTopRun = function(){
 		var scrollHeight = $(document).scrollTop();
 		var screenWidth = $(window).width();
-		if(screenWidth <= 1024 ){
+		if(screenWidth <= 1024 && scrollHeight == 0 ){
 		$(".btn_top").hide();
 		}else{
 		if(scrollHeight > 10){
