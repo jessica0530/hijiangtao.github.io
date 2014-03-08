@@ -13,6 +13,27 @@
   </head>
   <!--a script to set the timer-->
   <script type="text/javascript">
+	function backtop(){
+		var backtop = $("<a class='backTop'><img id="backToTop" src="/assets/back_top.png">∧</a>")
+		$("body").append(backtop);
+		  
+		var fn = function(){
+		$('html,body').animate({
+			scrollTop: '0px'
+			}, 200);
+			return false;
+		}
+		$('.backTop').bind('click',fn);
+		  
+		$(window).scroll(function () {
+			var scrollt = $(window).scrollTop();
+			if ( scrollt > 100 ){
+				$(".backTop").fadeIn("slow");
+			} else {
+				$(".backTop").fadeOut("slow");
+			}
+		});
+	}
     function setTimeSpan(){
             var date = new Date();
             timeSpan.innerText=date.format('yyyy-MM-dd hh:mm:ss');
@@ -78,29 +99,8 @@
         {{ content }}
         </article>
       </div>
-
-	  function backtop(){
-		var backtop = $("<a class='backTop'><img id="backToTop" src="/assets/back_top.png">∧</a>")
-		$("body").append(backtop);
-		  
-		var fn = function(){
-		$('html,body').animate({
-			scrollTop: '0px'
-			}, 200);
-			return false;
-		}
-		$('.backTop').bind('click',fn);
-		  
-		$(window).scroll(function () {
-			var scrollt = $(window).scrollTop();
-			if ( scrollt > 100 ){
-				$(".backTop").fadeIn("slow");
-			} else {
-				$(".backTop").fadeOut("slow");
-			}
-		});
-	}
-	backtop();
+	
+	  backtop();
 	  
     <footer><!--footer settings-->
         <p><small>
