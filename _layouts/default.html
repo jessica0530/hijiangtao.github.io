@@ -79,7 +79,28 @@
         </article>
       </div>
 
-	  functionpageScroll() {window.scrollBy(0,-10);scrolldelay=setTimeout('pageScroll()',100);if(document.documentElement.scrollTop==0)clearTimeout(scrolldelay);}<ahref="pageScroll();">返回顶部<img id="backToTop" src="/assets/back_top.png" title="返回顶部" alt="返回顶部" style="cursor: pointer; border: 0px none; bottom: 80px; height: auto; margin: 0px; opacity: 0.5; padding: 0px; position: fixed; right: 40px; width: 35px;"></a>
+	  function backtop(){
+		var backtop = $("<a class='backTop'><img id="backToTop" src="/assets/back_top.png">∧</a>")
+		$("body").append(backtop);
+		  
+		var fn = function(){
+		$('html,body').animate({
+			scrollTop: '0px'
+			}, 200);
+			return false;
+		}
+		$('.backTop').bind('click',fn);
+		  
+		$(window).scroll(function () {
+			var scrollt = $(window).scrollTop();
+			if ( scrollt > 100 ){
+				$(".backTop").fadeIn("slow");
+			} else {
+				$(".backTop").fadeOut("slow");
+			}
+		});
+	}
+	backtop();
 	  
     <footer><!--footer settings-->
         <p><small>

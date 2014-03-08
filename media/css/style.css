@@ -160,3 +160,7 @@ background: #ff0000;
 color: white;
 background: #83BF73;
 }
+
+.backTop{ display:none; position:fixed; left:50%; bottom:100px; margin-left:510px; cursor:pointer; width:35px; height:35px; background:#80b600; _position:absolute; _top:expression((document.compatMode && document.compatMode=='CSS1Compat' ? documentElement.scrollTop+(documentElement.clientHeight - this.clientHeight):document.body.scrollTop+(document.body.clientHeight - this.clientHeight))-100); text-align:center; color:#fff; line-height:32px;}
+
+.backTop:hover{ background:#75a700;}
