@@ -164,7 +164,7 @@ background: #83BF73;
 #toTop {
 width:50px;
 height:50px;
-background:#fff url(/assets/back_top.png);
+background:#fff url(http://hijiangtao.github.io/assets/back_top.png);
 position:fixed;
 left: 50%;
 margin-left: 510px;
@@ -175,5 +175,5 @@ display:none;
 
 .btn_top,.btn_top a{width:69px;height:81px;overflow:hidden;}
 .btn_top{position:fixed;_position:absolute;/* for IE6 */_top:expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight-50);/*for IE6*/right:50px;bottom:50px;left:auto;display:inline-block;text-indent:-9999px;overflow:hidden;cursor:pointer;}
-.btn_top a{display:block;background:url(/assets/back_top.png) 0 0 no-repeat;}
+.btn_top a{display:block;background:url(http://hijiangtao.github.io/assets/back_top.png) 0 0 no-repeat;}
 .btn_top a:hover{background-position:0 -85px;}
