@@ -79,7 +79,7 @@
         </article>
       </div>
 	  
-	  <div class="btn_top" title="回到顶部" style="position: fixed; bottom: 165px; right: 100px; cursor: pointer;"><a id="dynamic-to-top" href="javascript:;" target="_self" title="回到顶部"><img src="/assets/back_top.png" style="width:31px; height:31px;"></a></div>
+	  <div class="btn_top" title="回到顶部" style="position: fixed; bottom: 100px; right: 100px; cursor: pointer;"><a id="dynamic-to-top" href="javascript:;" target="_self" title="回到顶部"><img src="/assets/back_top.png" style="width:31px; height:31px;"></a></div>
 		<script type="text/javascript">
 		scrollTopRun = function(){
 		var scrollHeight = $(document).scrollTop();
@@ -87,7 +87,7 @@
 		if(screenWidth <= 1024 ){
 		$(".btn_top").hide();
 		}else{
-		if(scrollHeight > 0){
+		if(scrollHeight > 10){
 		$(".btn_top").show();
 		$(".btn_top").unbind();
 		$(".btn_top").bind("click",function(){
