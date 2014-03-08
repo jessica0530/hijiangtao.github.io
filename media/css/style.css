@@ -175,5 +175,5 @@ display:none;
 
 .btn_top,.btn_top a{width:69px;height:81px;overflow:hidden;}
 .btn_top{position:fixed;_position:absolute;/* for IE6 */_top:expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight-50);/*for IE6*/right:50px;bottom:50px;left:auto;display:inline-block;text-indent:-9999px;overflow:hidden;cursor:pointer;}
-.btn_top a{display:block;background:url(http://img04.taobaocdn.com/imgextra/i4/45631983/T2EMS4XlBaXXXXXXXX_!!45631983.gif) 0 0 no-repeat;}
+.btn_top a{display:block;background:url(/assets/back_top.png) 0 0 no-repeat;}
 .btn_top a:hover{background-position:0 -85px;}
