@@ -36,6 +36,10 @@ bool	fullscreen=TRUE;	// 全屏标志缺省，缺省设定成全屏模式
 
 由于CreateGLWindow()有对WndProc()的引用，所以我们还需要定义WndProc()。
 
+```
+LRESULT	CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);// WndProc的定义
+```
+
 接下来是重新设置OpenGL场景的大小，而不管窗口的大小是否已经改变(假定您没有使用全屏模式)。
 
 ```
