@@ -451,6 +451,8 @@ int WINAPI WinMain(	HINSTANCE	hInstance,		// 当前窗口实例
 }
 ```
 
-到这里，以上的所有代码编译后就都可以运行了，对了，最后一定要注意一点，**项目设置-属性-常规-字符集**中一定要记住选择使用多字节字符集，不然运行时你的程序会报错。
+到这里，以上的所有代码编译后就都可以运行了，对了，最后一定要注意一点，**项目设置-属性-常规-字符集**中一定要记住选择使用多字节字符集，不然运行时你的程序可能会报错。错误信息是有关LPCWSTR类型不兼容的，具体如下所示：
+
+>	1	IntelliSense: "const char *" 类型的实参与 "LPCWSTR" 类型的形参不兼容	......DataBlog_CreateOpenGLWindow.cpp	62	31	1创建窗口
 
 最后再次感谢Nehe以及众多开发者的无私奉献，附上我敲的本部分代码汇总：[下载地址](http://hijiangtao.github.io/code/DataBlog_CreateOpenGLWindow.cpp)
