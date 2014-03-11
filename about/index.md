@@ -4,15 +4,25 @@ layout: page
 comments: no
 ---
 
-Greetings,I'm an undergraduate student at School of Software, Beijing Institute of Technology. 
+Greetings, I'm an undergraduate student at School of Software, Beijing Institute of Technology. 
 
-My major is Digital Media Technology,I'm interested in Computer Vision and Digital Media.I'm the Director of Data Mining Laboratory,which belongs to the Software Technology Innovation Base.
+My major is Digital Media Technology, I'm the Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT.
 
-I'm now having a researching project with Professor Tang in Data Mining and Processing from January,2014.
+###Intersted in
+
+I did some Computer Vision job and 3D Game in class, I'd attend some National competitions and got some good awards. I am intersted in Data visualization and Digital Media. I had three years experience in Students' Union and some Students Society.
+
+###Research Directions
+
+Data Analysis and visualization.
+
+###Researching Project
+
+January,2014 - now: Project with Professor Tang in Data Mining and Processing.
 
 {{ site.about }}
 
-![hijiangtao](/album/me.jpg)
+![hijiangtao](/album/me.jpg "Photo of hijiangtao")
 
 ----
 
