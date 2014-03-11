@@ -8,3 +8,7 @@ comments: yes
 
 * [Game 2048](http://hijiangtao.github.io/lab/2048) : a very interesting game.
 * [Flash Wowow](/assets/Banner_Website.swf) - a very interesting interactive flash.
+
+----
+
+Data.Blog致力于原创与开源的无私分享精神，但由于本人水平有限，以上列出的作品均为他人创作的开源分享，此处hijiangtao仅作为一个搬运工。在未来，hijiangtao会不断努力，奉献自己的点滴成果。
