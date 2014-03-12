@@ -49,9 +49,13 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 
-.score-container {
-  position: relative;
+.scores-container {
   float: right;
+  text-align: right; }
+
+.score-container, .best-container {
+  position: relative;
+  display: inline-block;
   background: #bbada0;
   padding: 15px 25px;
   font-size: 25px;
@@ -60,19 +64,19 @@ h1.title {
   font-weight: bold;
   border-radius: 3px;
   color: white;
-  margin-top: 8px; }
-  .score-container:after {
+  margin-top: 8px;
+  text-align: center; }
+  .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
     top: 10px;
     left: 0;
-    content: "Score";
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
     text-align: center;
     color: #eee4da; }
-  .score-container .score-addition {
+  .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
     color: red;
@@ -85,6 +89,12 @@ h1.title {
     -moz-animation: move-up 600ms ease-in;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both; }
+
+.score-container:after {
+  content: "Score"; }
+
+.best-container:after {
+  content: "Best"; }
 
 p {
   margin-top: 0;
@@ -179,10 +189,6 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-    .game-container .game-message .score-sharing {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 10px; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
@@ -446,13 +452,6 @@ hr {
 .game-explanation {
   margin-top: 50px; }
 
-.sharing {
-  margin-top: 20px;
-  text-align: center; }
-  .sharing > iframe, .sharing span {
-    display: inline-block;
-    vertical-align: middle; }
-
 @media screen and (max-width: 480px) {
   html, body {
     font-size: 15px; }
@@ -462,14 +461,17 @@ hr {
     padding: 0 20px; }
 
   h1.title {
-    font-size: 50px; }
+    font-size: 27px;
+    margin-top: 15px; }
 
   .container {
     width: 280px;
     margin: 0 auto; }
 
-  .score-container {
-    margin-top: 0; }
+  .score-container, .best-container {
+    margin-top: 0;
+    padding: 15px 10px;
+    min-width: 40px; }
 
   .heading {
     margin-bottom: 10px; }
@@ -522,10 +524,6 @@ hr {
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
-      .game-container .game-message .score-sharing {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
@@ -641,59 +639,3 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
-.btc-donate {
-  position: relative;
-  margin-left: 20px;
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
-  cursor: pointer; }
-  .btc-donate img {
-    vertical-align: -4px;
-    margin-right: 8px; }
-  .btc-donate a {
-    color: #f9f6f2;
-    text-decoration: none;
-    font-weight: normal; }
-  .btc-donate .address {
-    cursor: auto;
-    position: absolute;
-    width: 340px;
-    right: 50%;
-    margin-right: -170px;
-    padding-bottom: 7px;
-    top: -30px;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: 400ms ease;
-    -moz-transition: 400ms ease;
-    -webkit-transition-property: top, opacity;
-    -moz-transition-property: top, opacity; }
-    .btc-donate .address:after {
-      position: absolute;
-      border-top: 10px solid #bbada0;
-      border-right: 7px solid transparent;
-      border-left: 7px solid transparent;
-      content: "";
-      bottom: 0px;
-      left: 50%;
-      margin-left: -7px; }
-    .btc-donate .address code {
-      background-color: #bbada0;
-      padding: 10px 15px;
-      width: 100%;
-      border-radius: 3px;
-      line-height: 1;
-      font-weight: normal;
-      font-size: 15px;
-      font-family: Consolas, "Liberation Mono", Courier, monospace;
-      text-align: center; }
-  .btc-donate:hover .address, .btc-donate .address:hover .address {
-    opacity: 1;
-    top: -45px;
-    pointer-events: auto; }
