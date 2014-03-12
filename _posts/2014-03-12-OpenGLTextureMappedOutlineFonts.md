@@ -15,7 +15,7 @@ tags: OpenGL
 
 本笔记记录的信息有：如何绘制一个像3D模型一样会旋转的3D文字。
 
-此处的代码基础上一篇笔记《[OpenGL学习笔记13：创建3D图形字体](http://hijiangtao.github.io/2014/03/12/OpenGL3DText/)》的代码，这样来创作纹理字体的演示会省力不少。
+此处的代码基于上一篇笔记《[OpenGL学习笔记13：创建3D图形字体](http://hijiangtao.github.io/2014/03/12/OpenGL3DText/)》的代码，这样来创作纹理字体的演示会省力不少。
 
 首先要添加一个叫做texture[]的整型变量。它用于保存纹理。
 
