@@ -153,4 +153,4 @@ Configuration file: C:/Users/admin/Documents/GitHub/hijiangtao.github.io/_config
 
 ----
 
-搞定一切，重新`jekyll serve`，漂亮本地网站出来了，虽然浏览器里输入的不是0.0.0.0：4000而是127.0.0.1:4000了。但毕竟如此一来，我已经可以开始昨天fork到的资源的调试工作了，开心。
+搞定一切，重新`jekyll serve`，漂亮本地网站出来了，虽然浏览器里输入的不是0.0.0.0:4000而是127.0.0.1:4000了。但毕竟如此一来，我已经可以开始昨天fork到的资源的调试工作了，开心。
