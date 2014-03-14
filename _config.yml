@@ -13,5 +13,7 @@ pygments: true
 safe: true
 paginate: 20
 about: "这里是 hijiangtao 的个人技术博客，欢迎你的到来。"
-server: http://localhost
-server_port: 4000
+host: 0.0.0.0
+port: 4000
+destination: ./_site
+layouts: ./_layouts
