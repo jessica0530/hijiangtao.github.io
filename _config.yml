@@ -13,5 +13,3 @@ pygments: true
 safe: true
 paginate: 20
 about: "这里是 hijiangtao 的个人技术博客，欢迎你的到来。"
-destination: ./_site
-layouts: ./_layouts
