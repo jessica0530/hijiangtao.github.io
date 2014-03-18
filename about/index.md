@@ -34,7 +34,7 @@ January,2014 - now: Project with Professor Tang in Data Mining and Processing.
 
 邮箱/E-mail：[{{ site.email }}](mailto:{{ site.email }})
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+GitHub : [http://github.com/hijiangtao](http://github.com/hijiangtao)
 
 ----
 

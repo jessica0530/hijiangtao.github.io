@@ -19,7 +19,7 @@ tags: Aspectj
 
 **aspectj官方网站**：<http://www.eclipse.org/aspectj/>
 
-从官网上不仅能下载到aspectj的最新安装包，而且能看到对这款软件的最权威定义：A seamless aspect-oriented extension to the Java^{tm} programming language.
+从官网上不仅能下载到aspectj的最新安装包，而且能看到对这款软件的最权威定义：A seamless aspect-oriented extension to the Java<sup>[tm]</sup> programming language.
 
 解释成中文就是一中面向切片编程的语言，而他能干的一些事情包括：错误检查和处理，同步，上下文敏感的行为，性能优化，监控和记录，调试支持，多目标的协议等。
 
