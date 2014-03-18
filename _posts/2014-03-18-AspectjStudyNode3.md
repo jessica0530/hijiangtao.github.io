@@ -11,10 +11,11 @@ tags: Aspectj
 
 **Aspectj学习笔记系列：**
 
-1. 《[Aspectj学习笔记（一）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode1/)》
-2. 《[Aspectj学习笔记（二）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode2/)》
-3. 《[Aspectj学习笔记（三）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode3/)》 
-4. 《[Aspectj学习笔记（四）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode4/)》
+1. 《[Aspectj操作与语法基础学习笔记（一）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode1/)》
+2. 《[Aspectj操作与语法基础学习笔记（二）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode2/)》
+3. 《[Aspectj操作与语法基础学习笔记（三）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode3/)》 
+4. 《[Aspectj操作与语法基础学习笔记（四）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode4/)》
+5. 《[Aspectj操作与语法基础学习笔记（五）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode5/)》
 
 ----
 
