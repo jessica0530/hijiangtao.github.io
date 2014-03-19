@@ -3,7 +3,7 @@ date: 2014-03-19 09:30:00
 layout: post
 title: OpenGL学习笔记17：二次几何体
 thread: 86
-categories: 文档
+categories: 教程
 tags: OpenGL
 ---
 
