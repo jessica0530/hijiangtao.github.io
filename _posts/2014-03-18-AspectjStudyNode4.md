@@ -1,7 +1,7 @@
 ---
 date: 2014-03-18 19:30:00
 layout: post
-title: Aspectj学习笔记（四）
+title: Aspectj操作与语法基础学习笔记（四）
 thread: 85
 categories: 文档
 tags: Aspectj
