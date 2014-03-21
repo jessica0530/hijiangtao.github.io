@@ -133,7 +133,7 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 <property>
 <name>fs.default.name</name>
 <value>hdfs://localhost:9000</value>
-</propety>
+</property>
 <!—fs.default.name：用来配置namenode,指定HDFS文件系统的URL，通过该URL我们可以访问文件系统的内容，也可以把localhost换成本机IP地址；如果是完全分布模式，则必须把localhost改为实际namenode机器的IP地址；如果不写端口，则使用默认端口8020。 –>
 <property>
 <name>hadoop.tmp.dir</name>
@@ -158,7 +158,7 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 <property>
 <name>dfs.replication</name>
 <value>1</value>
-</proerty>
+</property>
 <!—用来设置文件系统冗余备份数量，因为只有一个节点，所有设置为1，系统默认数量为3–>
 ```
 
