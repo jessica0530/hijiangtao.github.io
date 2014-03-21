@@ -70,13 +70,21 @@ sudo apt-get install build-essential
 sudo apt-get install gfortran
 ```
 
- * 如果出现错误：`configure: error: –with-readline=yes (default) and headers/libs are not available`，需要安装libreadline6-dev：
+ * 如果出现错误：
+ 
+>configure: error: –with-readline=yes (default) and headers/libs are not available
+
+需要安装libreadline6-dev：
 
 ```
 sudo apt-get install libreadline6-dev
 ```
 
-* 如果出现错误：`configure: error: –with-x=yes (default) and X11 headers/libs are not available`，需要安装libxt-dev：
+* 如果出现错误：
+
+>configure: error: –with-x=yes (default) and X11 headers/libs are not available
+
+需要安装libxt-dev：
 
 ```
 sudo apt-get install libxt-dev
