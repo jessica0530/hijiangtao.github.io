@@ -1,7 +1,7 @@
 ---
 date: 2014-03-23 20:00:00
 layout: post
-title: Ubuntu开机报错Could not update ICEauthority file .../.ICEauthority 解决方案
+title: Ubuntu开机报错Could not update ICEauthority file /.ICEauthority解决方案
 thread: 91
 categories: 文档
 tags: Linux
