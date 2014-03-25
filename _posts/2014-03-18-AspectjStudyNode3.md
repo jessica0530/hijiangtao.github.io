@@ -83,7 +83,7 @@ Entering : HelloWorld.java:13
 int the main method i = 5
 ```
 
-其中，这里用到了一内置的对象：thisJoinPoint,他表示当前jionPoint.　跟我们在java中的this其实是差不多的。getSourceLocation（）表示原代码的位置。其中13表示行号。
+其中，这里用到了一内置的对象：thisJoinPoint,他表示当前jionPoint.　跟我们在java中的this其实是差不多的。getSourceLocation()表示原代码的位置。其中13表示行号。
 
 接下来我们把HelloAspect中的call改为execution，发现运行结果如下所示：
 

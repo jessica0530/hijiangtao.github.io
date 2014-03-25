@@ -31,46 +31,49 @@ Advice在AspectJ有三种：before、 after、Around之分，是真正的执行�
 
 有关Advice的用法，我研究的也不是特别清楚，所以这里就不好整理出来了，有关权威的介绍可以参考[官方文档-Advice](https://www.eclipse.org/aspectj/doc/next/progguide/semantics-advice.html)。
 
-接下来重点整理的是around通知：
+接下来重点整理的是around通知。以下为Aspect文件，其运行是基于前几节笔记代码的基础上运行的，所以在原有代码没有删除的基础上，需要import几个包并用within去除影响：
 
 ```
 package com.aspectj.demo.aspect;
-import com.aspectj.demo.test.HelloAspectDemo;;
+import com.aspectj.demo.test.HelloAspectDemo;
+import com.aspectj.demo.test.TestCfow;
 
 public aspect HelloAspect {  
-	pointcut HelloWorldPointCut(int x) : execution(* main(int)) && !within(HelloAspectDemo) && !within(Testfow) && args(x);  
+	pointcut HelloWorldPointCut(int x) : execution(* main(int)) && !within(HelloAspectDemo) && !within(TestCfow) && args(x);  
 
-	int around(int x) : HelloWorldPointCut(x){  
+	int around(int x) : HelloWorldPointCut(x){
 		System.out.println("Entering : " + thisJoinPoint.getSourceLocation());  
 		int newValue = proceed(x*3);  
-		return newValue;-
+		return newValue;
 	}
 }
 ```
 
-修改HelloWorld.java文件如下：
+然后修改HelloWorld.java文件如下，这里我们给带参数的main()函数添加返回值：
 
 ```
-package com.aspectj.demo.aspect;
-import com.aspectj.demo.test.HelloAspectDemo;;
+package com.aspectj.demo.test;
 
-public aspect HelloAspect {  
-	pointcut HelloWorldPointCut(int x) : execution(* main(int)) && !within(HelloAspectDemo) && args(x);  
+public class HelloWorld {
+	public static int main(int i){
+        System.out.println("in the main method i = " + i);
+        return i;
+    }
 
-	int around(int x) : HelloWorldPointCut(x){  
-		System.out.println("Entering : " + thisJoinPoint.getSourceLocation());  
-		int newValue = proceed(x*3);  
-		return newValue;
-	}    
-}  
+    public static void main(String[] args) {
+        main(5);
+    }
+}
 ```
 
-最主要的就是 proceed（）这个方法，运行时结果如下所示：
+对了，运行前记得把除HelloAspect.aj文件之外的其他.aj文件都注释掉，以防影响。最主要的就是 proceed（）这个方法，运行时结果如下所示：
 
 ```
-Entering : HelloWorld.java:6
-in the main method  i = 15
+Entering : HelloWorld.java:4
+in the main method i = 15
 ```
+
+虽然对于around方法你可能仍然不是太理解，但从运行结果中，可以清晰的看出：around改变了i的值，这样一想是不是会有些收获了呢？
 
 ----
 
