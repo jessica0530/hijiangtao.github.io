@@ -53,7 +53,7 @@ tags: Aspectj
 
 然后在src中new两个package，分别命名为com.aspectj.demo.aspect和com.aspectj.demo.test，前者用来放apsect，后者用来放测试类。
 
-**在aspectj中创建HelloWorld.java**
+**在test中创建HelloWorld.java**
 
 ```
 package com.aspectj.demo.test;  
@@ -67,7 +67,7 @@ public class HelloWorld {
 }  
 ```
 
-**在test中建立HelloAspect.aj**
+**在aspectj中建立HelloAspect.aj**
 
 ```
 package com.aspectj.demo.aspect;  

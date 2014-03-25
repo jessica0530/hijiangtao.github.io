@@ -36,7 +36,7 @@ tags: R hadoop Linux
 * Java环境配置成功
 * R的环境安装成功
 
-RHadoop是RevolutionAnalytics的工程的项目，开源实现代码在GitHub社区可以找到。RHadoop包含三个R包 (rmr，rhdfs，rhbase)，分别是对应Hadoop系统架构中的，MapReduce, HDFS, HBase 三个部分。除了rmr2安装包其他下载最新版的均没问题，点击[下载地址](https://github.com/RevolutionAnalytics/RHadoop/wiki/Downloads)了解更多。
+RHadoop是RevolutionAnalytics的工程的项目，开源实现代码在GitHub社区可以找到。RHadoop包含三个R包 (rmr，rhdfs，rhbase)，分别是对应Hadoop系统架构中的MapReduce, HDFS, HBase 三个部分。除了rmr2安装包其他下载最新版的均没问题，点击[下载地址](https://github.com/RevolutionAnalytics/RHadoop/wiki/Downloads)了解更多。
 
 额外需要提出的是，我在安装rmr2时最新版似乎总有不兼容的问题，所以最终决定装2.2.0版本的rmr，下载地址上面已经给出。
 
