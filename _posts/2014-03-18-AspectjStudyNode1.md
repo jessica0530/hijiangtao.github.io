@@ -67,7 +67,9 @@ public class HelloWorld {
 }  
 ```
 
-**在aspectj中建立HelloAspect.aj**
+**在aspect中建立HelloAspect.aj**
+
+.aj文件新建可以右击相应路径New->Aspect,然后输入相应的文件名，Finish则新建成功。
 
 ```
 package com.aspectj.demo.aspect;  
