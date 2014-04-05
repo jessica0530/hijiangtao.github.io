@@ -118,11 +118,17 @@ tags: D3 数据可视化
 将以下信息存在tsv文件中（带空格分隔符的txt文件也可以），这样我们就可以批量从文件中读取数据并绘制可视化图表了。
 
 >name	value
+
 >Locke	4
+
 >Reyes	8
+
 >Ford	15
+
 >Jarrah	16
+
 >Shephard	23
+
 >Kwon	42
 
 有关TSV/CSV的信息可以查阅[D3.TSV](https://github.com/mbostock/d3/wiki/CSV)，以下为处理代码：
