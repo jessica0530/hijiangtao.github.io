@@ -41,7 +41,9 @@ pre code {
   font-family: "Lekton", monospace;
   line-height: 1.6;
   display: block;
-  overflow: auto; }
+  overflow-x:hidden;
+  overflow-y:auto;
+  }
 
 code {
   font-size: 11px;
