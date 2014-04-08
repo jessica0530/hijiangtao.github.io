@@ -43,6 +43,7 @@ pre code {
   display: block;
   overflow-x:hidden;
   overflow-y:auto;
+  word-wrap:break-word;
   }
 
 code {
