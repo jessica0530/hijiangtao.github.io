@@ -13,7 +13,7 @@ tags: Mahout hadoop 协同过滤
 
 ##一、问题描述
 
-对于协同过滤，我们就是要预测用户所喜欢的但是又没有发现的物品。下面给出一个明确的评分(1.0-5.0)矩阵，设为矩阵A。但是A有一部分没有值，表明用户没有对此物品评分，于是我们需要预测出没有值的评分部分。
+对于协同过滤(Collaborative Filtering)，我们就是要预测用户所喜欢的但是又没有发现的物品。下面给出一个明确的评分(1.0-5.0)矩阵，设为矩阵A。但是A有一部分没有值，表明用户没有对此物品评分，于是我们需要预测出没有值的评分部分。
 
 ![](/assets/2014-04-08-MahoutRecommendationExampleMA.png "评分矩阵(user X item) A")
 <center>评分矩阵(user X item) A</center>
@@ -118,4 +118,4 @@ mahout recommendfactorized -i /home/mhadoop/out/userRatings/ -o /home/mhadoop/re
 
 ----
 
-**结语**：好吧，虽然跑通了分布式例子但是原理还不是特别理解，所以找论文找书籍找技术宅的博客去看看。感谢 GOOGLE，[King's Notes](http://hnote.org/big-data/mahout/mahout-movielens-example-matrix-factorization) 以及 Apache Mahout官方文档的帮助。
+**结语**：好吧，虽然跑通了分布式例子但是原理还不是特别理解，所以找论文找书籍找技术宅的博客去看看。感谢 GOOGLE，[ Wikipedia - Collaborative filtering](http://en.wikipedia.org/wiki/Collaborative_filtering)， [King's Notes](http://hnote.org/big-data/mahout/mahout-movielens-example-matrix-factorization) 以及 Apache Mahout官方文档的帮助。
