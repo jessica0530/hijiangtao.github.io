@@ -26,7 +26,12 @@
 	flag=1
 	function f1()
 	{
-		alert("Yes, you are right! ")
+		var name=prompt("What's your name？","Dianxin Jia")
+		if (name!=null && name!="")
+		{
+			alert("Yes, you are right！" + '\n' + "Jiang Tao loves " + name + ", and " + name + " loves Jiang Tao too!" + '\n'+ "I feel extremely happy!")
+		}
+		//alert("Yes, you are right! ")
 	}
 	function f()
 	{
@@ -59,11 +64,11 @@
 	ga('create', 'UA-48887175-1', 'hijiangtao.github.io');
 	ga('send', 'pageview');
 </script>
-<body style="background-color:turquoise;">
+<body>
 	<h1 style="font-family:楷体_GB2312,Times New Roman;position:absolute; left:220px; top:175px; width:auto; height:210px;">Do You Love Me?</h1>
 	<div ID="By" style="position:absolute; left:285px; top:235px; width:210px; 
 	height:210px;">
-		<input class="Bncss" type="button" value=" YES " onclick="f1()" />
+		<input class="Bncss" type="button" value=" YES " onclick="f1()" value="嘿嘿"/>
 	</div>
 	<div ID="Bn" style="position:absolute; left:360px; top:235px; width:210px; height:210px;">
 		<input class="Bncss" type="button" value="  NO  " onmouseover="f()" />
