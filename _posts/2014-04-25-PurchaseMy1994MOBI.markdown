@@ -22,6 +22,7 @@ tags: godaddy dns
 先在Godaddy里设置一下：点进自己的域名，然后manage你的Nameservers，选择Custom然后添加如下两条信息：
 
 >F1G1NS1.DNSPOD.NET
+
 >F1G1NS2.DNSPOD.NET
 
 点击SAVE然后以后的域名操作就都可以移植到DNSPOD上进行了。对了现在赶紧去注册一个DNSPOD账号。
