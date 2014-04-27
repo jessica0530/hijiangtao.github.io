@@ -27,6 +27,18 @@ HDFS 中通常以机架的形式组织 DataNode，机架之间又通过交换机
 
 DataNode 不仅要响应 HDFS 的客户机的读写请求，还要对 NameNode 发送对块的操作命令作出响应；每个 DataNode 都会向 NameNode 发送心跳消息，每条消息包中都包含一个块信息相关的报告，NameNode 据此验证块映射和其他文件系统的元数据。如果 NameNode 在规定的时间内没有收到某个 DataNode 发送心跳消息，将对该 DataNode 上的数据将采取修复措施。
 
+**3)  Block**
+
+HDFS(Hadoop Distributed File System)默认的最基本的存储单位是64M的数据块。 
+
+和普通文件系统相同的是，HDFS中的文件是被分成64M一块的数据块存储的。 
+
+不同于普通文件系统的是，HDFS中，如果一个文件小于一个数据块的大小，并不占用整个数据块存储空间。
+
+下面给出一个比较好理解的HDFS工作流程图:
+
+![](/assets/2014-04-26-HadoopHDFS.png "HDFS工作流程图")
+
 ----
 
 ##MapReduce
