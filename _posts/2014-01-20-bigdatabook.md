@@ -13,7 +13,7 @@ tags: data 知乎
 
 ----
 
-《大数据时代》电子版：[下载地址](http://pan.baidu.com/s/1eQeLIeQ)
+《大数据时代》电子版：[下载地址](http://pan.baidu.com/s/1jGFnCc2)  提取密码: wb41
 
 知乎[AndyHsu](http://www.zhihu.com/people/andyhsu)：
 
