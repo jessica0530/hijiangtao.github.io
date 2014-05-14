@@ -144,3 +144,9 @@ local代表本地，[3]表示3个线程跑。
 阅读spark的理论paper:<http://www.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-82.pdf>
 
 阅读spark源代码：<https://github.com/mesos/spark>
+
+----
+
+##声明
+
+本文已经成功投稿至36大数据网站，于2014-05-13发表。[链接地址](http://www.36dsj.com/archives/8001)
