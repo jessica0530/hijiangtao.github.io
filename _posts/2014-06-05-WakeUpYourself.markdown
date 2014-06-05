@@ -27,4 +27,6 @@ tags: 星空日记 北京大学 微电影
 
 ----
 
-微电影视频地址：[http://t.cn/RvMl3pv](http://t.cn/RvMl3pv)
+微电影《星空日记》
+
+<embed src="http://player.youku.com/player.php/sid/XNzIxODU2NTQw/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
