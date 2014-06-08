@@ -6,7 +6,9 @@ comments: no
 
 Greetings, I'm an undergraduate student at School of Software, Beijing Institute of Technology. 
 
-The Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT. I'm very interested in things about Internet, including about all knids of products and technologies. I did some Computer Vision job and 3D Game in courses projects, I'd attend some National competitions and got some good awards. I am intersted in Data visualization and Digital Media. I had three years experience in Students' Union and some Students Society.
+The Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT. I'm very interested in things about Internet, including about all knids of products and technologies. 
+
+I did some Computer Vision job and 3D Game in courses projects, I'd attend some National competitions and got some good awards. I am intersted in Data visualization and Digital Media. I had three years experience in Students' Union and some Students Society.
 
 一名非常平凡但不甘于平凡的标准大学生，北京理工大学软件学院本科。
 
@@ -36,6 +38,8 @@ Data Analysis and visualization.
 ----
 
 ![hijiangtao](/album/me.jpg "Photo of hijiangtao")
+
+----
 
 ###Contact / 联系方式
 
