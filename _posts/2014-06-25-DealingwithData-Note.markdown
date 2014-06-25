@@ -246,7 +246,7 @@ d3.json("data.json", function(error, json){
 });
 ```
 
-如上所示，假设我们在同目录下有一个数据文件叫data.json,此时我们将现有数据与其进行合并（合并时用的函数是data.concat()），然后对这个数据进行绘制（）。
+如上所示，假设我们在同目录下有一个数据文件叫data.json,此时我们将现有数据与其进行合并（合并时用的函数是data.concat()），然后对这个数据进行绘制（render(data)）。
 
 除此之外，你还可以使D3用相同的方法加载csv,tsv,txt,html,xml等数据。
 
