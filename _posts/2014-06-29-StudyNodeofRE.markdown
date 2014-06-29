@@ -38,6 +38,8 @@ tags: debug
 
 ----
 
+**常见的元字符**
+
 <table>
         <thead>
             <tr>
@@ -48,11 +50,11 @@ tags: debug
         <tbody>
             <tr>
                 <td><span>.</span></td>
-                <td><span class="desc">匹配除换行符以外的任意字符</span></td>
+                <td><span>匹配除换行符以外的任意字符</span></td>
             </tr>
             <tr>
                 <td><span>\w</span></td>
-                <td><span class="desc">匹配字母或数字或下划线或汉字</span></td>
+                <td><span>匹配字母或数字或下划线或汉字</span></td>
             </tr>
             <tr>
                 <td><span>\s</span></td>
@@ -76,8 +78,6 @@ tags: debug
             </tr>
         </tbody>
     </table>
-
-<center>常见的元字符</center>
 
 ----
 
@@ -339,6 +339,8 @@ tags: debug
 但为什么第一个匹配是aab（第一到第三个字符）而不是ab（第二到第三个字符）？简单地说，因为正则表达式有另一条规则：
 
 >The match that begins earliest wins.
+
+----
 
 **懒惰限定符**
 
