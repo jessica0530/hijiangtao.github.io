@@ -3,7 +3,6 @@ elf().getPosition = elf.dom.BoxModel.getPosition = js.dom.BoxModel.getPosition =
 	
 	var cStyle = el.currentStyle || document.defaultView.getComputedStyle(el, null);
 	
-	// var layoutBWX = 0, layoutBWY = 0;
 	var isWebkit = navigator.userAgent.match(/Chrome|Safari/);
 	
 	if (!refer) {
@@ -26,9 +25,7 @@ elf().getPosition = elf.dom.BoxModel.getPosition = js.dom.BoxModel.getPosition =
 				}
 			}
 		}
-		//避免ie和ff计算body的offsetLeft不一致
-//		pos.x = el.offsetLeft - node.offsetLeft;//-(parseInt(cStyle.marginLeft)||0);
-//		pos.y = el.offsetTop - node.offsetTop;//-(parseInt(cStyle.marginTop)||0);
+		
 		if (cStyle.position == 'static' && el.currentStyle) {
 			pos.x += (parseInt(document.body.currentStyle.marginLeft, 10) || 0) * 2;
 			pos.y += (parseInt(document.body.currentStyle.marginTop, 10) || 0) * 2;
@@ -48,17 +45,16 @@ var site = {
 	Translation: {
 		lang: {
 			en: {
-				name: 'MythArcher Yan',
-				title: 'Web Engineer, Freelancer',
+				name: 'hijiangtao',
+				title: 'BITer, love TMT.',
 				works: 'Works',
 				blog: 'Blog',
 				'google-plus': '+me',
-
 				'work-for-free': 'Work for Freedom',
 				'programming-skills': 'Programming Skills',
 				'using-tools': 'Using Tools',
 				'contact-me': 'Contact Me',
-				'contact-me-description': 'I undertake various types of Web development in long term. If you can provide a payment not lower than $10/h, feel free contact me: ',
+				'contact-me-description': 'BITer:',
 				recently: 'Recently'
 			}
 		},
@@ -86,7 +82,6 @@ var site = {
 		index: function () {
 			function getDayLight() {
 				var time = new Date();
-				// time.setHours(17);
 				var hour = time.getHours() - 12;
 				var factor = hour ? Math.abs(hour) / hour : 1;
 				hour = hour + (time.getMinutes() * 60 + time.getSeconds()) / 3600;
@@ -103,7 +98,6 @@ var site = {
 				textColorBase = 0x4d;
 				textColorDelta = 0x80;
 				textColor = Math.round(textColorBase + textColorDelta * getDayLight());
-				// console.log(textColor);
 				elf('#card header').css('color', 'rgb(' + textColor + ',' + textColor + ',' + textColor + ')');
 			}
 
@@ -330,12 +324,6 @@ site.ScrollFollow = elf().Class({
 				props.position = 'fixed';
 				props.top = this.marginTop + 'px';
 				props.left = startLeft + 'px';
-				// var screenSub = pageWidth - contentWidth - 46;
-				// var sideOffset = Math.max(0, screenSub) + (this.sideOffset + docElem.scrollLeft * side);
-				// if (pageWidth < contentWidth && side > 0) {
-				// 	sideOffset += screenSub;
-				// }
-				// props[this.side] = sideOffset + 'px';
 			}
 		} else if (pageWidth > this.minWidth) {
 			props.position = 'absolute';
@@ -360,7 +348,7 @@ elf(function () {
 	}
 	site.Translation.translate(navigator.language || 'zh-CN');
 
-	elf('a.mail').attr('href', elf().template('mailto:#{0}@#{1}', 'mytharcher', 'gmail.com'));
+	elf('a.mail').attr('href', elf().template('mailto:#{0}@#{1}', 'hijiangtao', 'gmail.com'));
 
 	var module = document.body.className.replace(/page-type-/g, '').split(' ');
 	module.forEach(function (item) {
