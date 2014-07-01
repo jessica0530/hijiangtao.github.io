@@ -15,12 +15,12 @@ tags: Aspectj
 
 ----
 
-1. [Aspectj操作与语法基础学习笔记（一）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode1/)
+1. [Aspectj操作与语法基础学习笔记（一）](http://hijiangtao.github.io/blog/2014/03/18/AspectjStudyNode1.html/)
 
-2. [Aspectj操作与语法基础学习笔记（二）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode2/)
+2. [Aspectj操作与语法基础学习笔记（二）](http://hijiangtao.github.io/blog/2014/03/18/AspectjStudyNode2.html/)
 
-3. [Aspectj操作与语法基础学习笔记（三）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode3/)
+3. [Aspectj操作与语法基础学习笔记（三）](http://hijiangtao.github.io/blog/2014/03/18/AspectjStudyNode3.html/)
 
-4. [Aspectj操作与语法基础学习笔记（四）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode4/)
+4. [Aspectj操作与语法基础学习笔记（四）](http://hijiangtao.github.io/blog/2014/03/18/AspectjStudyNode4.html/)
 
-5. [Aspectj操作与语法基础学习笔记（五）](http://hijiangtao.github.io/2014/03/18/AspectjStudyNode5/)
+5. [Aspectj操作与语法基础学习笔记（五）](http://hijiangtao.github.io/blog/2014/03/18/AspectjStudyNode5.html/)

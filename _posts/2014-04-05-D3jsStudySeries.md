@@ -11,8 +11,8 @@ tags: D3 数据可视化
 
 整理后专栏分三篇文章（若原作者更新，此专栏也会同步更新）：
 
-1. [D3.js学习笔记：简单条形图制作](http://hijiangtao.github.io/2014/04/05/D3jsStudyNode1/)
+1. [D3.js学习笔记：简单条形图制作](http://hijiangtao.github.io/blog/2014/04/05/D3jsStudyNode1.html/)
 
-2. [D3.js学习笔记：SVG制图与简单TSV数据呈现](http://hijiangtao.github.io/2014/04/05/D3jsStudyNode2/)
+2. [D3.js学习笔记：SVG制图与简单TSV数据呈现](http://hijiangtao.github.io/blog/2014/04/05/D3jsStudyNode2.html/)
 
-3. [D3.js学习笔记：条形图绘制方向转换与优化](http://hijiangtao.github.io/2014/04/05/D3jsStudyNode3/)
+3. [D3.js学习笔记：条形图绘制方向转换与优化](http://hijiangtao.github.io/blog/2014/04/05/D3jsStudyNode3.html/)

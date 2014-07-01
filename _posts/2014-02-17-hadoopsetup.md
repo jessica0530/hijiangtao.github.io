@@ -252,19 +252,19 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 
 最后，附上几篇我之前装Hadoop2.2.0时记下的笔记，希望对到来的你有所帮助：
 
-1. [“软件包*没有可供安装的候选者”解决方案](http://hijiangtao.github.io/2014/02/16/apt-getproblem/)
+1. [“软件包*没有可供安装的候选者”解决方案](http://hijiangtao.github.io/blog/2014/02/16/apt-getproblem.html/)
 
-2. [Ubuntu开机出现speech-dispatcher disabled解决办法](http://hijiangtao.github.io/2014/02/15/linuxspeechproblem/)
+2. [Ubuntu开机出现speech-dispatcher disabled解决办法](http://hijiangtao.github.io/blog/2014/02/15/linuxspeechproblem.html/)
 
-3. [搭建Hadoop环境配置所需软件汇总](http://hijiangtao.github.io/2014/02/14/hadoopsetupsoftware/)
+3. [搭建Hadoop环境配置所需软件汇总](http://hijiangtao.github.io/blog/2014/02/14/hadoopsetupsoftware.html/)
 
-4. [jdk安装与配置教程](http://hijiangtao.github.io/2014/02/14/hadoopjdk/)
+4. [jdk安装与配置教程](http://hijiangtao.github.io/blog/2014/02/14/hadoopjdk.html/)
 
-5. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/2014/02/14/hadoopconfmodify/)
+5. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/blog/2014/02/14/hadoopconfmodify.html/)
 
-6. [Ubuntu系统网络管理器显示“设备未托管”解决方法](http://hijiangtao.github.io/2014/02/13/ubuntunetworkmanager/)
+6. [Ubuntu系统网络管理器显示“设备未托管”解决方法](http://hijiangtao.github.io/blog/2014/02/13/ubuntunetworkmanager.html/)
 
-7. [因修改/etc/sudoers权限导致sudo和su无法使用的解决方法](http://hijiangtao.github.io/2014/02/13/sudosolution/)
+7. [因修改/etc/sudoers权限导致sudo和su无法使用的解决方法](http://hijiangtao.github.io/blog/2014/02/13/sudosolution.html/)
 
 ----
 

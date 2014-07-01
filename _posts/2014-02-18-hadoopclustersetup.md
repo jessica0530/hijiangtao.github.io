@@ -29,7 +29,7 @@ tags: hadoop
    
 ###2.1 创建两个Datanode节点系统
 
-先用VMware vsphere client将一个ubuntu系统复制两份，系统分别命名为node1和node2。VMware vsphere client使用可以查看[VMware vsphere client安装笔记](http://hijiangtao.github.io/2014/02/18/vmwaresetup)。
+先用VMware vsphere client将一个ubuntu系统复制两份，系统分别命名为node1和node2。VMware vsphere client使用可以查看[VMware vsphere client安装笔记](http://hijiangtao.github.io/blog/2014/02/18/vmwaresetup)。
 
 ###2.2 修改Datanode系统中IP与主机名
 
@@ -126,7 +126,7 @@ node2
 ./start-all.sh
 ```
 
-检验方法和伪分布式相同，此处不再赘述。相关操作可以查看[Hadoop1.2.1伪分布模式安装教程](http://hijiangtao.github.io/2014/02/17/hadoopsetup/)。
+检验方法和伪分布式相同，此处不再赘述。相关操作可以查看[Hadoop1.2.1伪分布模式安装教程](http://hijiangtao.github.io/blog/2014/02/17/hadoopsetup/)。
 
 ----
 
