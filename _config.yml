@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title/
-url: http://hijiangtao.github.io
+url: http://hijiangtao.github.io/blog/
 name: Data.Blog
 author: hijiangtao
 email: hijiangtao@gmail.com
@@ -10,7 +10,7 @@ weibo: 1679954022
 pygments: true
 safe: true
 paginate: 20
-paginate_path: "/blog/page:num"
+paginate_path: "page:num"
 about: "这里是 hijiangtao 的个人技术博客，欢迎你的到来。"
 custom:
 	scrollingLoadCount: 2
