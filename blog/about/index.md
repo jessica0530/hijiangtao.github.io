@@ -43,9 +43,9 @@ Data Analysis and visualization.
 
 ###Contact / 联系方式
 
-数据网站/Data Website : [New Data](http://1994.mobi/)
+数据网站/Data Website : [Data]({{ site.url }})
 
-技术博客/Tech Blog : [{{ site.name }}]({{ site.url }})
+技术博客/Tech Blog : [{{ site.name }}]({{ site.url }}/blog)
 
 新浪微博/Weibo : [@hijiangtao](http://weibo.com/jiangtaotao)
 
