@@ -1,8 +1,7 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 url: http://hijiangtao.github.io
 name: Data.Blog
-website: Austin's House
 author: hijiangtao
 email: hijiangtao@gmail.com
 duoshuo: datablog
@@ -12,3 +11,5 @@ pygments: true
 safe: true
 paginate: 20
 about: "这里是 hijiangtao 的个人技术博客，欢迎你的到来。"
+custom:
+	scrollingLoadCount: 2
