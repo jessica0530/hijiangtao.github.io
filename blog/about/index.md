@@ -6,21 +6,21 @@ comments: no
 
 Greetings, I'm an undergraduate student at School of Software, Beijing Institute of Technology. 
 
-The Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT. I'm very interested in things about Internet, including about all knids of products and technologies. 
+The Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT. I'm very interested in things about Internet, including about all knids of products and technologies, I will focus on TMT and related aspects in my free time to help me know more about the world that I loved deeply. 
 
 I did some Computer Vision job and 3D Game in courses projects, I'd attend some National competitions and got some good awards. I am intersted in Data visualization and Digital Media. I had three years experience in Students' Union and some Students Society.
 
-一名非常平凡但不甘于平凡的标准大学生，北京理工大学软件学院本科。
+一名非常平凡但不甘于平凡的大学生，北京理工大学软件学院本科在读。
 
-**现任北京理工大学软件学院创新创业基地数据智能实验室主任**，热爱互联网新奇事物与技术， 平时没事时喜欢鼓捣视频剪辑、特效处理的小技术。参加过一些科技竞赛并获得过国家级奖项，并在大学三年生活中积攒了一些学生工作的组织经验。
+**现任北京理工大学软件学院创新创业基地数据智能实验室主任**，热爱互联网新奇事物与技术， 平时没事时喜欢鼓捣视频剪辑、特效处理的小技术，闲暇之余喜欢关注前端技术、TMT行业动态。参加过一些科技竞赛并获得过国家级奖项，并在大学三年生活中积攒了一些学生工作的组织经验。
 
 ----
 
 ###Research Directions / 研究方向
 
-Data Analysis and visualization.
+Data Mining and visualization.
 
-数据分析与可视化
+数据挖掘与可视化
 
 ----
 
@@ -43,9 +43,9 @@ Data Analysis and visualization.
 
 ###Contact / 联系方式
 
-数据网站/Data Website : [Data]({{ site.url }})
+个人首页/Homepage : [hijiangtao](http://1994.mobi/)
 
-技术博客/Tech Blog : [{{ site.name }}]({{ site.url }}/blog)
+技术博客/Tech Blog : [{{ site.name }}]({{ site.url }})
 
 新浪微博/Weibo : [@hijiangtao](http://weibo.com/jiangtaotao)
 
