@@ -142,7 +142,7 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 <!– hadoop.tmp.dir：Hadoop的默认临时路径，这个最好配置，如果在新增节点或者其他情况下莫名其妙的DataNode启动不了，就删除此文件中的tmp目录即可。不过如果删除了NameNode机器的此目录，那么就需要重新执行NameNode格式化的命令。该目录必须预先手工创建。–>
 ```
 
-3.**配置hdfs-site.xml**：在configuration标签中加入以下内容，所有不存在的目录都要预先创建：
+3.**配置hdfs-site.xml**：在configuration标签中加入以下内容：
 
 ```
 <property>
@@ -161,6 +161,10 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 </property>
 <!—用来设置文件系统冗余备份数量，因为只有一个节点，所有设置为1，系统默认数量为3–>
 ```
+
+注：之前在网上查到的资料显示有*所有不存在的目录都要预先创建*，但在实际操作中格式化过程经常出现错误，结果为namenode无法跑起来，多次经过查看错误日志发现是hadoopdata和hadoopname的配置存在，使得hadoop不允许格式化，所以当hadoop配置不成功时，建议查看一下日志，可以尝试将这两个文件夹删除再运行一次。
+
+**hdfs-site.xml配置中两个文件夹不能提前建立的原因**：感谢网友**上海-草头**的提醒，hadoop为了防止错误格式化已存在的集群，在这两个文件夹存在时，是不允许格式化的。
 
 4.**配置mapred-site.xml**：在configuration标签中加入以下内容：
 
