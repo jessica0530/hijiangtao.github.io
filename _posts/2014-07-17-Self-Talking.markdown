@@ -1,5 +1,5 @@
 ---
-date: 2014-07-17 01:20:00
+date: 2014-07-17 GMT+8 01:20:00
 layout: post
 title: 其实是睡不着的碎碎念
 thread: 139
