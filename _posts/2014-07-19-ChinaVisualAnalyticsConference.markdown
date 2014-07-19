@@ -2,7 +2,7 @@
 date: 2014-07-19 11:50:00
 layout: post
 title: 第一届中国可视分析大会（China Visual Analytics Conference 2014）
-thread: 1340
+thread: 140
 categories: 文档
 tags: 可视分析
 ---
