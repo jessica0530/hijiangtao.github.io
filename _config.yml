@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title.html
-url: http://hijiangtao.github.io/blog/
+url: http://hijiangtao.github.io/
 name: Data.Blog
 author: hijiangtao
 email: hijiangtao@gmail.com

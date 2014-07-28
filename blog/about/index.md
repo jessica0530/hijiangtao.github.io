@@ -45,7 +45,7 @@ Data Mining and visualization.
 
 个人首页/Homepage : [hijiangtao](http://1994.mobi/)
 
-技术博客/Tech Blog : [{{ site.name }}]({{ site.url }})
+技术博客/Tech Blog : [{{ site.name }}]({{ site.url/blog }})
 
 新浪微博/Weibo : [@hijiangtao](http://weibo.com/jiangtaotao)
 
