@@ -17,7 +17,7 @@ tags: 分类算法
 
 从数学角度来说，分类问题可做如下定义：
 
-已知集合<img src="http://www.forkosh.com/mathtex.cgi?C=\left\{y_1,%20y_2,%20...,y_n\right\}">和<img src="http://www.forkosh.com/mathtex.cgi?I=\left\{x_1,%20x_2,...,%20x_m,...\right\}">，确定映射规则<img src="http://www.forkosh.com/mathtex.cgi?y=f\left\(x\right\)">，使得任意<img src="http://www.forkosh.com/mathtex.cgi?x_i\inI">有且仅有一个<img src="http://www.forkosh.com/mathtex.cgi?y_i\inC使得y_i=f\left\(x_i\right\)">成立。其中C叫做类别集合，其中每一个元素是一个类别，而I叫做项集合，其中每一个元素是一个待分类项，f叫做分类器。分类算法的任务就是构造分类器f。
+已知集合<img src="http://latex.codecogs.com/gif.latex?C=\left\{y_1,%20y_2,%20...,y_n\right\}">和<img src="http://latex.codecogs.com/gif.latex?I=\left\{x_1,%20x_2,...,%20x_m,...\right\}">确定映射规则<img src="http://latex.codecogs.com/gif.latex?y=f\left\(x\right\)">，使得任意<img src="http://latex.codecogs.com/gif.latex?x_i\inI">有且仅有一个<img src="http://latex.codecogs.com/gif.latex?y_i\inC使得y_i=f\left\(x_i\right\)">成立。其中C叫做类别集合，其中每一个元素是一个类别，而I叫做项集合，其中每一个元素是一个待分类项，f叫做分类器。分类算法的任务就是构造分类器f。
 
 举个例子：
 
@@ -31,13 +31,13 @@ tags: 分类算法
 
 曾经在概率论课程中学过什么事条件概率：
 
-<img src="http://www.forkosh.com/mathtex.cgi?P\left\(A|B\right\)">表示事件B已经发生的前提下，事件A发生的概率，叫做事件B发生下事件A的条件概率。其基本求解公式为：
+<img src="http://latex.codecogs.com/gif.latex?P\left\(A|B\right\)">表示事件B已经发生的前提下，事件A发生的概率，叫做事件B发生下事件A的条件概率。其基本求解公式为：
 
-<img src="http://www.forkosh.com/mathtex.cgi?P\left\(A|B\right\)=\frac{P\left\(AB\right\)}{P\left\(B\right\)}">
+<img src="http://latex.codecogs.com/gif.latex?P\left\(A|B\right\)=\frac{P\left\(AB\right\)}{P\left\(B\right\)}">
 
 而贝叶斯定理如下：
 
-<img src="http://www.forkosh.com/mathtex.cgi?P\left\(B|A\right\)=\frac{P\left\(A|B\right\)P\left\(B\right\)}{P\left\(A\right\)}">
+<img src="http://latex.codecogs.com/gif.latex?P\left\(B|A\right\)=\frac{P\left\(A|B\right\)P\left\(B\right\)}{P\left\(A\right\)}">
 
 ----
 
@@ -47,13 +47,13 @@ tags: 分类算法
 
 朴素贝叶斯的正式定义如下所示：
 
-1、设<img src="http://www.forkosh.com/mathtex.cgi?x=\left\{a_1, a_2,...,a_m\right\}">为一个待分类项，而每个a为x的一个特征属性。
+1、设<img src="http://latex.codecogs.com/gif.latex?x=\left\{a_1, a_2,...,a_m\right\}">为一个待分类项，而每个a为x的一个特征属性。
 
-2、有类别集合<img src="http://www.forkosh.com/mathtex.cgi?C=\left\y_1, y_2,...,y_n\right\">。
+2、有类别集合<img src="http://latex.codecogs.com/gif.latex?C=\left\y_1, y_2,...,y_n\right\">。
 
-3、计算<img src="http://www.forkosh.com/mathtex.cgi?P\left\(y_1|x\right\), P\left\(y_2|x\right\),..., P\left\(y_n|x\right\)">。
+3、计算<img src="http://latex.codecogs.com/gif.latex?P\left\(y_1|x\right\), P\left\(y_2|x\right\),..., P\left\(y_n|x\right\)">。
 
-4、如果<img src="http://www.forkosh.com/mathtex.cgi?P\left\(y_k|x\right\)=max\left\{P\left\(y_1|x\right\), P\left\(y_2|x\right\),..., P\left\(y_n|x\right\)\right\}">，则<img src="http://www.forkosh.com/mathtex.cgi?x\iny_k">。
+4、如果<img src="http://latex.codecogs.com/gif.latex?P\left\(y_k|x\right\)=max\left\{P\left\(y_1|x\right\), P\left\(y_2|x\right\),..., P\left\(y_n|x\right\)\right\}">，则<img src="http://latex.codecogs.com/gif.latex?x\iny_k">。
 
 而处理步骤中第三步为关键之处。为了求得条件概率，我们可以这么做：
 
