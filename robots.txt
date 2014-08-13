@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://hijiangtao.github.io/sitemap

@@ -17,13 +17,13 @@ Jekyll 是一个简洁的、特别针对博客平台的 静态网站 生成器�
 
 ----
 
-##二、准备工作
+##二、配置Ruby环境
 
 * **安装Ruby**
 
-Jekyll使用动态脚本语言 Ruby 写成。因此在安装Jekyll前，必须先安装Ruby。这里选择Ruby 1.9.3-p392下载安装。下载地址：[点击下载](http://rubyforge.org/frs/download.php/76798/rubyinstaller-1.9.3-p392.exe)
+Jekyll使用动态脚本语言 Ruby 写成。因此在安装Jekyll前，必须先安装Ruby。这里选择Ruby 1.9.3-p392下载安装。下载地址：[点击下载](http://rubyforge.org/frs/download.php/76798/rubyinstaller-1.9.3-p392.exe)。当然，为了简便我们可以直接使用RubyInstaller来完成这一步：[RubyInstaller Download Link](http://rubyinstaller.org/downloads/)
 
-这个和普通的Windows下其他软件安装部署一样，.exe文件点击安装即可，不做过多介绍。但是要注意非常重要的一点（这一点在DevKit安装时也要特别注意）：**安装目录一定不能存在空格，直接D：根目录下安装最好。**由于我一直习惯将程序装在Program Files文件夹中，所以在后来gem命令时一直重复了好多遍，但总是显示：
+这个和普通的Windows下其他软件安装部署一样，.exe文件点击安装即可，不做过多介绍。对了，记得安装的时候选上**Add Ruby executables to your PATH**（添加系统环境变量）。但是要注意非常重要的一点（这一点在DevKit安装时也要特别注意）：**安装目录一定不能存在空格，直接D：根目录下安装最好。**由于我一直习惯将程序装在Program Files文件夹中，所以在后来gem命令时一直重复了好多遍，但总是显示：
 
 >Error installing rdiscount: ERROR: Failed to build gem native extension.
 
@@ -35,19 +35,41 @@ Jekyll使用动态脚本语言 Ruby 写成。因此在安装Jekyll前，必须�
 
 * **完成安装**
 
-接下来开始运行安装脚本： 在命令行中输入`cd <你的DEVKIT安装目录>`定位到你的安装目录下；然后继续在命令行中输入`ruby dk.rb init`生成一个config.yml文件，这个文件在之后会使用到；输入`ruby dk.rb review`你可以看到你安装好的ruby会列出来（只有那些通过RubyInstaller包安装的才会被检测到）。
+接下来开始运行安装脚本： 在命令行中输入
+
+```
+cd <你的DEVKIT安装目录>
+```
+
+定位到你的安装目录下；然后继续在命令行中输入
+
+```
+ruby dk.rb init
+```
+
+生成一个config.yml文件，这个文件在之后会使用到；输入
+
+```
+ruby dk.rb review
+```
+
+你可以看到你安装好的ruby会列出来（只有那些通过RubyInstaller包安装的才会被检测到）。
 
 如果此时打开config.yml文件，你发现你刚刚安装好的Ruby安装目录写好在里面了，那就OK了；如果没有，或者你想使用其他版本的，可以在这个文件内编辑改写（注意目录前要加横线和空格，比如:`- C:/Ruby200`）。
 
-最后输入ruby dk.rb install完成安装。（如果失败，尝试在后面加上--force来强制更新下）
+最后输入以下命令完成安装。（如果失败，尝试在后面加上--force来强制更新下）
+
+```
+ruby dk.rb install
+```
 
 对了，到这一步最好去Windows的环境变量中把上面DevKit的安装目录加进去，不然运行下面命令时可能又会报错。
 
 ----
 
-##三、安装Jekyll
+##三、安装Jekyll（需联网）
 
-如果选择默认安装那么在最后调试的时候可能会由于你网站中的代码高亮等成分的存在而造成运行终止，所以安装Jekyll一定要注意版本号，这里推荐1.4.2，安装命令如下：
+如果选择默认安装那么在最后调试的时候可能会由于你网站中的代码高亮等成分的存在而造成运行终止，所以安装Jekyll一定要注意版本号，这里推荐1.4.2，安装命令如下（不带命令版本的代码把--version及之后的代码删去即可）：
 
 ```
 gem install jekyll --version "=1.4.2"

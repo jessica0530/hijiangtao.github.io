@@ -7,7 +7,7 @@ email: hijiangtao@gmail.com
 duoshuo: datablog
 github: hijiangtao
 weibo: 1679954022
-pygments: true
+highlighter: pygments
 safe: true
 paginate: 20
 paginate_path: "/blog/page:num"
